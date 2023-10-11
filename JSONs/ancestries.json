@@ -1,0 +1,433 @@
+{
+    "ancestries": [
+      {
+        "name": "Anão",
+        "description": "Anões possuem uma reputação merecida como um povo estoico e austero, arraigado em cidadelas e cidades esculpidas de rocha sólida. Embora alguns os vejam como carrancudos artesãos de pedra e metal, apenas os anões e aqueles que os conhecem de perto compreendem o seu zelo irrefreável pelo trabalho e a sua dedicação à qualidade em vez de quantidade. Para um estranho eles podem parecer desconfiados e reclusos em seus clãs, mas os anões são calorosos e atenciosos com seus amigos e família — preenchendo seus salões com o som de risadas e martelos batendo em bigornas.",
+        "attributes": ["CON", "WIS", "FREE"],
+        "defects": ["CHA"],
+        "pv": "10",
+        "size": "Médio",
+        "speed" : "6",
+        "languages": ["Comum", "Enânico"],
+        "traces": ["Anão", "Humanoide"],
+        "darkvision": true,
+        "heritages": [
+          {
+            "name": "ANÃO DA FORJA",
+            "description": "Você possui uma adaptação notável a ambientes quentes, herdada de ancestrais que habitaram desertos ardentes ou câmaras vulcânicas subterrâneas.\nIsto lhe concede resistência a fogo igual à metade de seu nível (mínimo 1) e você trata efeitos\n ambientais de calor como se fossem um passo menos extremo\n (calor incrível se torna extremo, calor extremo se torna severo e assim por diante).",
+            "adds" : [
+              {
+                "EFFECT" : "FIRERES", 
+                "FLAVOR" : "Resistência a fogo igual à metade de seu nível (mínimo 1)."
+              }
+            ]
+          },
+          
+          {
+            "name": "ANÃO GUARDIÃO DA MORTE",
+            "description": "Seus ancestrais servem como guardiões de tumbas há muitas gerações, e você carrega o poder que eles cultivaram para combater a necromancia.\nQuando rolar um sucesso em uma jogada de salvamento contra um efeito de necromancia, \ntrate o resultado como um sucesso crítico.",
+            "adds" : [
+              {
+              "EFFECT" : "SBC", 
+              "FLAVOR" : "Quando rolar um sucesso em uma jogada de salvamento contra um efeito de necromancia, trate o resultado como um sucesso crítico."
+              }
+            ]
+          },
+          {
+            "name": "ANÃO DAS ROCHAS",
+            "description": "Seus ancestrais viviam e trabalhavam entre as enormes e antigas rochas das montanhas ou nas profundezas da terra. \nIsto lhe torna sólido como uma rocha quando você planta seus pés.\nVocê recebe +2 de bônus de circunstância em suas CDs de Fortitude ou Reflexos contra tentativas de \nEmpurrar ou Derrubar feitas contra você. Este bônus também se aplica em jogadas de salvamento contra magias\n ou efeitos que tentem deixá-lo prostrado. Além disso, se qualquer efeito fosse forçá-lo a \nmover-se 3 metros ou mais, você é movido apenas metade da distância.",
+            "adds" : [
+              {
+                "EFFECT" : "BONUS", 
+                "FLAVOR" : "+2 de bônus de circunstância em suas CDs de Fortitude ou Reflexos contra tentativas de Empurrar ou Derrubar feitas contra você. Se qualquer efeito fosse forçá-lo a mover-se 3 metros ou mais, você é movido apenas metade da distância."
+              }
+            ]
+          },
+          {
+            "name": "ANÃO DE SANGUE ANCESTRAL",
+            "description": "Os heróis enânicos de antigamente conseguiam ignorar as magias de seus inimigos, e parte dessa resistência manifesta-se em você. \nVocê ganha a reação Invocar Sangue Ancestral.A resistência a magia inata de seus ancestrais manifesta-se repentinamente para logo após desaparecer lentamente. \nVocê recebe +1 de bônus de circunstância na jogada de salvamento acionadora e até o final deste turno.",
+            "adds" : [
+              { 
+              "EFFECT" : "BONUS", 
+              "FLAVOR" : "Você recebe +1 de bônus de circunstância na jogada de salvamento acionadora e até o final deste turno."
+              }
+            ]
+          },
+          {
+            "name": "ANÃO DE SANGUE FORTE",
+            "description": "Seu sangue corre forte e vigorosamente, permitindo que você seja capaz de ignorar toxinas.\nVocê adquire resistência a veneno igual à metade de seu nível (mínimo 1) e cada jogada de salvamento bem-sucedida \ncontra uma aflição de veneno reduz o estágio dele em 2 passos (ou reduz em 1 passo para um veneno virulento).\n Cada sucesso crítico contra um veneno em progresso reduz o estágio dele em 3, ou em 2 no caso de um veneno virulento.",
+            "adds" : [
+              {
+              "EFFECT" : "VENOMRES", 
+              "FLAVOR" : "Você adquire resistência a veneno igual à metade de seu nível (mínimo 1)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Elfo",
+        "description": "Como um povo antigo, elfos presenciaram enormes mudanças e possuem uma perspectiva única, que só é possível ao testemunhar o arco da história. Após deixarem o mundo em tempos antigos, eles retornaram a uma terra quase irreconhecível e ainda lutam para reivindicar seus lares ancestrais — especialmente aquelas invadidas por demônios terríveis. Para alguns, os elfos são alvo de admiração — graciosos e belos, com imenso talento e conhecimento. Contudo, os próprios elfos dão muito mais importância à sua liberdade pessoal do que a viver segundo estes ideais.",
+        "attributes": ["DEX", "INT", "FREE"],
+        "defects": "CON",
+        "pv": "6",
+        "size": "Médio",
+        "speed" : "9",
+        "languages": ["Comum", "Élfico"],
+        "traces": ["Elfo", "Humanoide"],
+        "darkvision": true,
+        "heritages": [
+          {
+            "name": "ELFO ÁRTICO",
+            "description": "Você habita nas profundezas do norte congelado e adquiriu uma resiliência incrível contra\nambientes frios, adquirindo resistência a frio igual à metade de seu nível (mínimo 1). Você\ntrata efeitos ambientais de frio como se fossem um passo menos extremo (frio incrível se\ntorna extremo, frio extremo se torna severo e assim por diante).",
+            "adds": [
+              {
+                "EFFECT": "COLDRES",
+                "FLAVOR": "Resistência a frio igual à metade de seu nível (mínimo 1)."
+              }
+            ]
+          },
+          {
+            "name": "ELFO DAS CAVERNAS",
+            "description": "Você é adaptado à vida nas florestas ou nas selvas e sabe escalar árvores e usar a\nfolhagem em seu favor. Quando Escalar árvores, vinhas e outras folhagens, você se move à metade de sua Velocidade em um sucesso e à\nsua Velocidade total em um sucesso crítico (e se move à sua Velocidade total em um sucesso se possuir Escalada Rápida). Isto não o afeta se você estiver usando uma Velocidade de escalada.\nVocê sempre pode usar a ação Obter Cobertura enquanto estiver em terreno de floresta, mesmo que não esteja próximo a um obstáculo que ofereceria cobertura.",
+            "adds": [
+              {
+                "EFFECT": "TREECLIMB",
+                "FLAVOR": "Quando Escalar árvores, vinhas e outras folhagens, você se move à metade de sua Velocidade em um sucesso e à sua Velocidade total em um sucesso crítico."
+              },
+              {
+                "EFFECT": "FORESTCOVER",
+                "FLAVOR": "Você sempre pode usar a ação Obter Cobertura enquanto estiver em terreno de floresta."
+              }
+            ]
+          },
+          {
+            "name": "ELFO DOS SUSSURROS",
+            "description": "Sua audição é extremamente aguçada, capaz de detectar\naté mesmo os sussurros mais baixos. Enquanto puder ouvir\nnormalmente, você pode usar a ação Buscar para sentir\ncriaturas indetectadas em um cone de 18 metros em vez de\nem um cone de 9 metros padrão. Você também recebe +2\nde bônus de circunstância quando usa a ação Buscar para\nlocalizar criaturas indetectadas que possa ouvir a até 9\nmetros com uma ação Buscar.",
+            "adds": [
+              {
+                "EFFECT": "ENHANCEDHEARING",
+                "FLAVOR": "Enquanto puder ouvir normalmente, você pode usar a ação Buscar para sentir criaturas indetectadas em um cone de 18 metros."
+              },
+              {
+                "EFFECT": "BONUS",
+                "FLAVOR": "Você recebe +2 de bônus de circunstância quando usa a ação Buscar para localizar criaturas indetectadas que possa ouvir a até 9 metros com uma ação Buscar."
+              }
+            ]
+          },
+          {
+            "name": "ELFO VIDENTE",
+            "description": "Você possui uma habilidade inata para detectar e\ncompreender fenômenos mágicos. Você pode conjurar o\ntruque mágico detectar magia como uma magia arcana\ninata à vontade. Um truque mágico é elevado para um\nnível de magia igual à metade de seu nível arredondado\npara cima.\nAdicionalmente, você recebe +1 de bônus de\ncircunstância para Identificar Magia e Decifrar Escrita\nde natureza mágica. Estas ações de perícia geralmente\nusam as perícias Arcanismo, Natureza, Ocultismo\nou Religião.",
+            "adds": [
+              {
+                "EFFECT": "MAGICDETECT",
+                "FLAVOR": "Você pode conjurar o truque mágico detectar magia como uma magia arcana inata à vontade."
+              },
+              {
+                "EFFECT": "BONUS",
+                "FLAVOR": "Você recebe +1 de bônus de circunstância para Identificar Magia e Decifrar Escrita de natureza mágica."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gnomo",
+        "description": "Muito tempo atrás, os primeiros ancestrais gnomos emigraram do Primeiro Mundo, o reino das\nfadas. Embora não seja claro o motivo da peregrinação inicial dos gnomos para Golarion, esta\nlinhagem féerica se manifesta nos gnomos modernos como um raciocínio bizarro, excentricidade,\ntendências obsessivas e algo geralmente visto como ingenuidade. As suas origens de outro mundo\nse refletem mais ainda em suas características físicas, como membros esguios, cabelos de cores\nbrilhantes e traços faciais infantis e extremamente expressivos.",
+        "attributes": ["CON", "CHA", "FREE"],
+        "defects": "STR",
+        "pv": "8",
+        "size": "Pequeno",
+        "speed" : "7,5",
+        "languages": ["Comum", "Gnômico", "Silvestre"],
+        "traces": ["Gnomo", "Humanoide"],
+        "darkvision": true,
+        "heritages": [
+          {
+            "name": "GNOMO CAMALEÃO",
+            "description": "A cor de seu cabelo e pele é mutável, possivelmente devido a magia latente. Você\npode mudar lentamente a cor base e sua saturação — a coloração pode ser diferente\npor todo seu corpo, permitindo que você crie padrões ou outros esquemas de cores.\nVocê gasta uma ação única para mudanças localizadas menores e até uma hora para\nmudanças dramáticas por todo seu corpo. Enquanto você dorme, as cores mudam\nsozinhas de acordo com seus sonhos, dando-lhe uma coloração inusitada a cada\nmanhã. Quando está em uma área onde sua coloração é levemente similar à do\nambiente (por exemplo, verde escuro em uma floresta), você pode usar a ação única\npara fazer mudanças menores localizadas para se misturar aos arredores. Isto lhe\nconcede +2 de bônus de circunstância em testes de Furtividade até seus arredores\nmudarem de coloração ou padrão.",
+            "adds": [
+              {
+                "EFFECT": "CHAMELEON",
+                "FLAVOR": "Você pode mudar lentamente a cor base e sua saturação."
+              },
+              {
+                "EFFECT": "BONUS",
+                "FLAVOR": "+2 de bônus de circunstância em testes de Furtividade até seus arredores mudarem de coloração ou padrão."
+              }
+            ]
+          },
+          {
+            "name": "GNOMO MANANCIAL",
+            "description": "Alguma outra fonte de magia exerce uma maior influência sobre você do que a magia\nprimal de sua linhagem feérica. Essa conexão vem de alguma origem diferente: um outro\nplano ou canção antiga ocultista; de uma divindade, celestial ou ínfero; de uma magia\nefluente deixada por uma guerra mágica; ou de uma antiga runa mágica.\nEscolha a tradição mágica arcana, divina ou ocultista. Você ganha um truque mágico\nda lista de magias dessa tradição mágica (páginas 307 a 315). Você pode conjurar esta\nmagia como uma magia inata à vontade, como uma magia de sua tradição escolhida.\nUm truque mágico é elevado para um nível de magia igual à metade de seu nível\narredondado para cima. Sempre que ganhar uma magia primal inata de um talento de ancestralidade de gnomo, troque a tradição primal da\nmagia recebida para sua tradição escolhida.",
+            "adds": [
+              {
+                "EFFECT": "MAGICTRAD",
+                "FLAVOR": "Escolha a tradição mágica arcana, divina ou ocultista. Você ganha um truque mágico da lista dessa tradição."
+              }
+            ]
+          },
+          {
+            "name": "GNOMO SENSITIVO",
+            "description": "Você vê todas as cores mais brilhantes, ouve todos os sons\nmais nitidamente e especialmente sente todos os cheiros\ncom detalhes incríveis. Você recebe um sentido especial:\num faro impreciso com alcance de 9 metros. Isto permite\nque você use seu sentido de olfato para determinar a\nlocalização exata de uma criatura (como explicado na\npágina 465). O MJ normalmente dobrará o alcance se\nvocê estiver na direção do vento em relação à criatura\nou o dividirá pela metade se estiver na direção oposto do\nvento em relação à criatura.\nAdicionalmente, você recebe +2 de bônus de\ncircunstância em testes de Percepção sempre que tentar\nlocalizar uma criatura indetectada que estiver no alcance\nde seu faro.",
+            "adds": [
+              {
+                "EFFECT": "ENHANCEDSENSE",
+                "FLAVOR": "Você recebe um sentido especial: um faro impreciso com alcance de 9 metros."
+              },
+              {
+                "EFFECT": "BONUS",
+                "FLAVOR": "+2 de bônus de circunstância em testes de Percepção sempre que tentar localizar uma criatura indetectada que estiver no alcance de seu faro."
+              }
+            ]
+          },
+          {
+            "name": "GNOMO TOCADO-PELAS-FADAS",
+            "description": "O sangue das fadas é extremamente forte em você,\ntornando-o praticamente uma delas. Você recebe o traço\nfada além dos traços gnomo e humanoide. Escolha um\ntruque mágico da lista de magias primais (página 314).\nVocê pode conjurar este truque mágico como uma\nmagia primal inata à vontade. Um truque mágico é\nelevado para um nível de magia igual à metade de seu\nnível arredondado para cima. Uma vez por dia, você\ncan trade este truque mágico para um diferente da\nmesma lista ao meditar para realinhar-se com o Primeiro\nMundo; esta é uma atividade de 10 minutos que possui o\ntraço concentração.",
+            "adds": [
+              {
+                "EFFECT": "FAE",
+                "FLAVOR": "O sangue das fadas é extremamente forte em você, tornando-o praticamente uma delas. Você recebe o traço fada."
+              },
+              {
+                "EFFECT": "PRIMALTRICK",
+                "FLAVOR": "Escolha um truque mágico da lista de magias primais. Você pode conjurar este truque mágico como uma magia primal inata à vontade."
+              }
+            ]
+          },
+          {
+            "name": "GNOMO UMBRAL",
+            "description": "Uma conexão com os gnomos das profundezas subterrâneas\n(conhecidos como svirfneblin), fadas sombrias ou outra fonte\nmágica permite que você enxergue na escuridão completa.\nVocê adquire visão no escuro.",
+            "adds": [
+              {
+                "EFFECT": "DARKVISION",
+                "FLAVOR": "Você adquire visão no escuro."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Goblin",
+        "description": "As histórias convolutas às quais outras pessoas se prendem não interessam aos goblins. Este\npovo pequeno vive no momento, e prefere histórias exageradas a registros concretos. Guerras\nque ocorreram algumas décadas atrás são praticamente história antiga. Incompreendidos pelos\noutros povos, os goblins são felizes à sua própria maneira. As virtudes dos goblins incluem ser\npresentes, criativos e honestos. Eles se esforçam em levar vidas cheias de satisfação em vez de\npreocuparem-se com o final de suas jornadas. Contar histórias, sem serem pedantes a respeito\ndos detalhes dos fatos. Eles podem ser baixos, mas sonham alto.",
+        "attributes": ["DEX", "CHA", "FREE"],
+        "defects": "WIS",
+        "pv": "6",
+        "size": "Pequeno",
+        "speed": "7,5",
+        "languages": ["Comum", "Goblin"],
+        "traces": ["Goblin", "Humanoide"],
+        "darkvision": true,
+        "heritages": [
+          {
+            "name": "GOBLIN BUCHO-DE-FERRO",
+            "description": "Você pode subsistir com comida que a maioria das pessoas consideraria apodrecida.\nVocê pode manter-se alimentado com refeições ruins em um assentamento, desde que haja\nlixo disponível, sem usar a atividade de recesso Subsistir. Você pode comer e beber coisas\nenquanto estiver enjoado.\nVocê também recebe +2 de bônus de circunstância em jogadas de salvamento contra\naflições, contra efeitos que imponham a condição enjoado e para remover essa condição.\nQuando rolar um sucesso em um salvamento de Fortitude afetado por este bônus, trate o\nresultado como um sucesso crítico. Todos estes benefícios se aplicam somente quando a\naflição ou condição resultar de algo que você ingeriu.",
+            "adds": [
+              {
+                "EFFECT": "IRONSTOMACH",
+                "FLAVOR": "Você pode manter-se alimentado com refeições ruins em um assentamento, desde que haja lixo disponível, sem usar a atividade de recesso Subsistir."
+              },
+              {
+                "EFFECT": "BONUS",
+                "FLAVOR": "+2 de bônus de circunstância em jogadas de salvamento contra aflições, contra efeitos que imponham a condição enjoado e para remover essa condição. Quando rolar um sucesso em um salvamento de Fortitude afetado por este bônus, trate o resultado como um sucesso crítico."
+              },
+              {
+                "EFFECT": "SBC",
+                "FLAVOR": "Quando rolar um sucesso em um salvamento de Fortitude afetado por este bônus, trate o resultado como um sucesso crítico."
+              }
+            ]
+          },
+          {
+            "name": "GOBLIN COURO-CHAMUSCADO",
+            "description": "Seus ancestrais sempre tiveram uma conexão com o fogo e uma pele mais espessa,\npermitindo que resistam a queimaduras. Você adquire resistência a fogo igual à metade de\nseu nível (mínimo 1). Você também pode se recuperar mais facilmente de estar em chamas.\nSeu teste simples para remover dano persistente de fogo possui CD 10 em vez de CD 15,\nque é reduzida para CD 5 se outra criatura usar uma ação apropriada para ajudá-lo.",
+            "adds": [
+              {
+                "EFFECT": "FIRERES",
+                "FLAVOR": "Você adquire resistência a fogo igual à metade de seu nível (mínimo 1)."
+              },
+              {
+                "EFFECT": "FIRERECOVERY",
+                "FLAVOR": "Seu teste simples para remover dano persistente de fogo possui CD 10 em vez de CD 15, que é reduzida para CD 5 se outra criatura usar uma ação apropriada para ajudá-lo."
+              }
+            ]
+          },
+          {
+            "name": "GOBLIN DENTES-DE-NAVALHA",
+            "description": "Os dentes de sua família são armas formidáveis. Você\nadquire um ataque desarmado com as mandíbulas\nque causa 1d6 de dano perfurante. Suas mandíbulas\nestão no grupo pugilato e possuem os traços acuidade\ne desarmado.",
+            "adds": [
+              {
+                "EFFECT": "BITE",
+                "FLAVOR": "Você adquire um ataque desarmado com as mandíbulas que causa 1d6 de dano perfurante."
+              }
+            ]
+          },
+          {
+            "name": "GOBLIN INQUEBRÁVEL",
+            "description": "Você é capaz de recuperar-se facilmente de ferimentos devido\na um crânio excepcionalmente grosso, ossos cartilaginosos\nou alguma outra benção contraditória. Você recebe 10\nPontos de Vida de sua ancestralidade em vez de 6. Quando\ncair, reduza o dano sofrido para como se tivesse caído apenas\nmetade da distância.",
+            "adds": [
+              {
+                "EFFECT": "HPBOOST",
+                "FLAVOR": "Você recebe 10 Pontos de Vida de sua ancestralidade em vez de 6."
+              },
+              {
+                "EFFECT": "FALLREDUCE",
+                "FLAVOR": "Quando cair, reduza o dano sofrido para como se tivesse caído apenas metade da distância."
+              }
+            ]
+          },
+          {
+            "name": "GOBLIN DAS NEVES",
+            "description": "Você é aclimatado a viver em terras frígidas, possuindo um\ntom de pele entre azul celeste a marinho, assim como uma\npelagem azul. Você adquire resistência a frio igual à metade\nde seu nível (mínimo 1). Você trata efeitos ambientais de\nfrio como se fossem um passo menos extremo (frio incrível\nse torna extremo, frio extremo se torna severo e assim\npor diante).",
+            "adds": [
+              {
+                "EFFECT": "COLDRES",
+                "FLAVOR": "Você adquire resistência a frio igual à metade de seu nível (mínimo 1)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Halfling",
+        "description": "Sem um lugar para chamar de seu, halflings controlam poucos assentamentos maiores do\nque aldeias. Em vez disso, eles frequentemente vivem entre humanos dentro das muralhas\nde cidades maiores, montando pequenas comunidades junto dos povos mais altos. Muitos\nhalflings levam vidas perfeitamente satisfatórias às sombras de seus vizinhos maiores, enquanto\noutros preferem uma existência nômade — viajando o mundo e se aproveitando de quaisquer\noportunidades e aventuras que surjam.",
+        "attributes": ["DEX", "WIS", "FREE"],
+        "defects": "STR",
+        "pv": "6",
+        "size": "Pequeno",
+        "speed": "7,5",
+        "languages": ["Comum", "Halfling"],
+        "traces": ["Halfling", "Humanoide"],
+        "darkvision": false,
+        "heritages": [
+          {
+            "name": "HALFLING DAS COLINAS",
+            "description": "Acostumado a uma vida calma nas colinas, seu povo considera o descanso e\nrelaxamento algo enormemente renovador e necessário — especialmente quando\ndesfrutando de certos confortos. Quando recuperar Pontos de Vida durante a noite,\nadicione seu nível à quantidade de Pontos de Vida recuperados. Quando qualquer\npessoa usar a perícia Medicina para Tratar seus Ferimentos, você pode comer um\nlanche para adicionar seu nível à quantidade de Pontos de Vida recuperadas pelo\ntratamento.",
+            "adds": [
+              {
+                "EFFECT": "REGENBOOST",
+                "FLAVOR": "Quando recuperar Pontos de Vida durante a noite, adicione seu nível à quantidade de Pontos de Vida recuperados."
+              },
+              {
+                "EFFECT": "TREATBOOST",
+                "FLAVOR": "Quando qualquer pessoa usar a perícia Medicina para Tratar seus Ferimentos, você pode comer um lanche para adicionar seu nível à quantidade de Pontos de Vida recuperadas pelo tratamento."
+              }
+            ]
+          },
+          {
+            "name": "HALFLING DO CREPÚSCULO",
+            "description": "Seus ancestrais realizaram, por bem ou por mal, muitos atos secretos sob o manto\nocultante do crepúsculo, e com o tempo desenvolveram uma habilidade de enxergar na\nmeia-luz mais além da visão apurada dos halflings. Você adquire visão na penumbra.",
+            "adds": [
+              {
+                "EFFECT": "DIMLIGHTVISION",
+                "FLAVOR": "Você adquire visão na penumbra."
+              }
+            ]
+          },        
+          {
+            "name": "HALFLING INTRÉPIDO",
+            "description": "Sua linhagem familiar é conhecida por manter a calma\ne resistir ao medo em situações críticas, tornando-os\nlíderes sábios e às vezes até mesmo heróis. Quando\nrolar um sucesso em uma jogada de salvamento contra\num efeito de emoção, trate o resultado como um\nsucesso crítico.",
+            "adds": [
+              {
+                "EFFECT": "SBC",
+                "FLAVOR": "Quando rolar um sucesso em uma jogada de salvamento contra um efeito de emoção, trate o resultado como um sucesso crítico."
+              }
+            ]
+          },        
+          {
+            "name": "HALFLING DAS MATAS",
+            "description": "Você vem das profundezas de uma selva ou floresta, e\naprendeu a usar seu tamanho pequeno para se mover entre\nmatagais, vinhas e outros obstáculos. Você ignora o terreno\ndifícil de árvores, folhagens e matagais.",
+            "adds": [
+              {
+                "EFFECT": "FORESTMOVE",
+                "FLAVOR": "Você ignora o terreno difícil de árvores, folhagens e matagais."
+              }
+            ]
+          },        
+          {
+            "name": "HALFLING NÔMADE",
+            "description": "Seus ancestrais viajavam de lugar em lugar por gerações,\nnunca contentes em se assentar. Você adquire dois\nidiomas adicionais, escolhidos dentre os idiomas comuns\ne incomuns disponíveis para você. Além disso, a cada\nvez que selecionar o talento Poliglota, você ganha outro\nidioma novo.",
+            "adds": [
+              {
+                "EFFECT": "LANGBOOST",
+                "FLAVOR": "Você adquire dois idiomas adicionais, escolhidos dentre os idiomas comuns e incomuns disponíveis para você."
+              },
+              {
+                "EFFECT": "POLYGLOTBONUS",
+                "FLAVOR": "A cada vez que selecionar o talento Poliglota, você ganha outro idioma novo."
+              }
+            ]
+          }      
+    ]
+    },
+    {
+      "name": "Humano",
+      "description": "Tão imprevisíveis e variados como os outros povos de Golarion, humanos possuem uma\nmotivação excepcional e uma grande capacidade de tolerar e expandir. Embora muitas\ncivilizações tenham prosperado antes da ascensão da humanidade, os humanos construíram\nalgumas das maiores e mais terríveis sociedades em todo o curso da história, tornando-se o povo\nmais populoso nos reinos ao redor do Mar Interior.",
+      "attributes": ["FREE", "FREE"],
+      "defects": "",
+      "pv": "8",
+      "size": "Médio",
+      "speed": "7,5",
+      "languages": ["Comum"],
+      "traces": ["Humano", "Humanoide"],
+      "darkvision": false,
+      "heritages": [
+        {
+          "name": "HERANÇA PERITA",
+          "description": "Sua engenhosidade lhe permite treinar em uma ampla\nvariedade de perícias. Você se torna treinado em uma perícia\nà sua escolha. No 5º nível, você se torna especialista na\nperícia escolhida.",
+          "adds": [
+            {
+              "EFFECT": "SKILLTRAIN",
+              "FLAVOR": "Você se torna treinado em uma perícia à sua escolha. No 5º nível, você se torna especialista na perícia escolhida."
+            }
+          ]
+        },
+        {
+          "name": "MEIO-ELFO",
+          "description": "Um de seus pais era um elfo ou meio-elfo — ou ambos eram\nmeio-elfos. Você possui orelhas pontudas e outros sinais que\ndenunciam sua herança élfica. Você recebe o traço elfo e visão\nna penumbra. Além disso, você pode selecionar talentos de\nelfo, humano e meio-elfo sempre que ganhar um talento\nde ancestralidade.",
+          "adds": [
+            {
+              "EFFECT": "ELFTRAITS",
+              "FLAVOR": "Você possui orelhas pontudas e outros sinais que denunciam sua herança élfica."
+            },
+            {
+              "EFFECT": "DIMLIGHTVISION",
+              "FLAVOR": "Você recebe visão na penumbra."
+            },
+            {
+              "EFFECT": "ELFHERITAGE",
+              "FLAVOR": "Você pode selecionar talentos de elfo, humano e meio-elfo sempre que ganhar um talento de ancestralidade."
+            }
+          ]
+        },
+        {
+          "name": "HERANÇA VERSÁTIL",
+          "description": "A versatilidade e ambição da humanidade alimentaram\nsua ascensão como a ancestralidade mais comum na\nmaioria das nações do mundo. Selecione um talento geral\npara o qual você atenda aos pré-requisitos (assim como\nseu talento de ancestralidade, você pode selecionar este\ntalento geral em qualquer momento durante a criação\nde personagem).",
+          "adds": [
+            {
+              "EFFECT": "GENSKILLTAL",
+              "FLAVOR": "Selecione um talento geral para o qual você atenda aos pré-requisitos."
+            }
+          ]
+        },
+        {
+          "name": "MEIO-ORC",
+          "description": "Um de seus pais era um orc ou meio-orc — ou ambos\neram meio-orcs. Você possui uma coloração verde em sua\npele e outros sinais que denunciam sua herança órquica.\nVocê recebe o traço orc e visão na penumbra. Além disso,\nvocê pode selecionar talentos de humano, meio-orc e orc\nsempre que ganhar um talento de ancestralidade.",
+          "adds": [
+            {
+              "EFFECT": "ORCTRAITS",
+              "FLAVOR": "Você possui uma coloração verde em sua pele e outros sinais que denunciam sua herança órquica."
+            },
+            {
+              "EFFECT": "DIMLIGHTVISION",
+              "FLAVOR": "Você recebe visão na penumbra."
+            },
+            {
+              "EFFECT": "ORCHERITAGE",
+              "FLAVOR": "Você pode selecionar talentos de humano, meio-orc e orc sempre que ganhar um talento de ancestralidade."
+            }
+          ]
+        }
+      ]
+    }        
+  ]
+}

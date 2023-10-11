@@ -1,0 +1,568 @@
+{
+    "ancestryfeats" : [
+        {
+            "ancestry" : "Anão",
+            "feats" : 
+            [
+                {
+                    "name" : "APTIDÃO COM PEDRAS",
+                    "description" : "Você tem facilidade de perceber mesmo as menores inconsistências\ne técnicas manuais nas pedras ao seu redor. Você recebe +2\nde bônus de circunstância em testes de Percepção para notar\ntrabalhos incomuns em pedra. Este bônus se aplica a testes para\ndescobrir armadilhas mecânicas feitas de pedra ou escondidas na\npedra.\nMesmo que não esteja usando a ação Buscar ou procurando,\no MJ automaticamente rola um teste secreto para determinar se\nvocê percebe trabalho incomum em pedras em qualquer situação.\nEste teste não recebe o bônus de circunstância e sofre –2 de\npenalidade de circunstância.",
+                    "effects" : [
+                        {
+                            "type" : "STONEINSIGHT",
+                            "description" : "Você recebe +2 de bônus de circunstância em testes de Percepção para notar trabalhos incomuns em pedra. Este bônus se aplica a testes para descobrir armadilhas mecânicas feitas de pedra ou escondidas na pedra."
+                        },
+                        {
+                            "type" : "AUTOSECRETCHK",
+                            "description" : "Mesmo sem usar a ação Buscar, o MJ automaticamente rola um teste secreto para ver se você percebe trabalho incomum em pedras. Este teste tem uma penalidade de circunstância de -2."
+                        }
+                    ]
+                },
+                {
+                    "name" : "CORRER NAS ROCHAS",
+                    "description" : "Sua conexão inata com as rochas permite que você se mova\nhabilmente por superfícies irregulares. Você pode ignorar terreno\ndifícil causado por detritos e solo irregular feito de pedra e terra.\nAlém disso, quando usar a perícia Acrobatismo para se Equilibrar\nsobre superfícies estreitas ou solo irregular composto de pedra\nou terra, você não fica desprevenido. Ainda, quando rolar um\nsucesso em um teste de Acrobatismo, trate o resultado como um\nsucesso crítico.",
+                    "effects" : [
+                        {
+                            "type" : "ROCKRUN",
+                            "description" : "Você pode ignorar terreno difícil causado por detritos e solo irregular feito de pedra e terra. Ao usar Acrobatismo para Equilibrar em solo irregular de pedra ou terra, você não fica desprevenido. Sucessos em Acrobatismo são tratados como sucessos críticos."
+                        }
+                    ]
+                },
+                {
+                    "name" : "FAMILIARIDADE COM ARMAS ENÂNICAS",
+                    "description" : "Viver entre o seu povo instilou em você uma afinidade com\narmas adequadas para ataques pesados e incisivos, e hoje\nvocê prefere esse tipo de arma a outras mais elegantes. Você\né treinado com machados de batalha, martelos de guerra\ne picaretas. Você também obtém acesso a todas as armas enânicas\nincomuns. Para determinar sua proficiência, armas\nenânicas marciais são consideradas armas simples,\nenquanto armas enânicas avançadas são consideradas\narmas marciais.",
+                    "effects" : [
+                        {
+                            "type" : "DWARFWEAPONFAMILIARITY",
+                            "description" : "Você é treinado com machados de batalha, martelos de guerra e picaretas. Você tem acesso a todas as armas enânicas incomuns. Armas enânicas marciais são consideradas simples para você, enquanto armas avançadas são consideradas marciais."
+                        }
+                    ]
+                },
+                {
+                    "name" : "FERRO DESIMPEDIDO",
+                    "description" : "Você aprendeu técnicas desenvolvidas por seus ancestrais\ndurante guerras antigas, permitindo-lhe vestir confortavelmente\ngrandes armaduras. Ignore a redução em sua Velocidade de\nqualquer armadura que vestir.\nAlém disso, a qualquer momento em que fosse sofrer\numa penalidade em sua Velocidade por alguma outra razão\n(como pela condição sobrecarregado ou por uma magia),\ndeduza 1,5 metros dessa penalidade. Por exemplo, a con-\ndição sobrecarregado normalmente impõe –3 metros de\npenalidade em Velocidade, mas lhe impõe apenas –1,5 me-\ntros de penalidade. Se sua Velocidade sofrer múltiplas pe-\nnalidades ao mesmo tempo, escolha apenas uma penalidade\npara reduzir.",
+                    "effects" : [
+                        {
+                            "type" : "IRONMOVEMENT",
+                            "description" : "Ignore a redução de velocidade de qualquer armadura que você vestir. Quando você sofre uma penalidade na sua Velocidade, reduza essa penalidade em 1,5 metros."
+                        }
+                    ]
+                },                
+                {
+                    "name" : "ÓDIO VINGATIVO",
+                    "description" : "Seu coração anseia por vingança contra aqueles que injustiçaram\nseu povo. Escolha um dos seguintes adversários ancestrais\nenânicos quando adquirir Ódio Vingativo: drow, duergar, gigante\nou orc. Você recebe +1 de bônus de circunstância em rolagens\nde dano com armas e ataques desarmados contra criaturas que\npossuam esse traço. Se seu ataque fosse causar mais do que\num dado de dano da arma (algo comum em níveis superiores\nao 1º), o bônus é igual à quantidade de dados da arma ou do\nataque desarmado.\nAdicionalmente, se uma criatura obtiver sucesso crítico em\num ataque e causar dano contra você, você recebe o bônus de\ndano contra essa criatura por 1 minuto (independentemente dela\npossuir o traço escolhido ou não).\nEspecial Seu MJ pode adicionar outros traços de criatura\napropriados à sua lista de adversários ancestrais se a comunidade\nde seu personagem combater outros tipos de inimigos\ncom frequência.",
+                    "effects" : [
+                        {
+                            "type" : "VENGEFULHATRED",
+                            "description" : "Você ganha +1 de bônus em rolagens de dano contra criaturas de um tipo específico. Se for atingido por um sucesso crítico, esse bônus é aplicado contra o atacante por 1 minuto."
+                        }
+                    ]
+                },
+                {
+                    "name" : "SABER ENÂNICO",
+                    "description" : "Você absorveu avidamente as histórias e tradições antigas de\nseus ancestrais, deuses e povo, estudando assuntos e técnicas\npassadas de geração em geração. Você recebe a graduação\nde proficiência treinado em Manufatura e Religião. Se algum\nbenefício fosse torná-lo automaticamente treinado em uma\ndessas perícias (por sua biografia ou classe, por exemplo), em\nvez disso você se torna treinado em uma outra perícia à sua\nescolha. Você também se torna treinado em Saber Enânico.",
+                    "effects" : [
+                        {
+                            "type" : "DWARFLORE",
+                            "description" : "Você é treinado nas perícias Manufatura, Religião, e Saber Enânico. Se já for treinado em uma delas, pode escolher outra perícia."
+                        }
+                    ]
+                }                
+            ]
+        },
+        {
+            "ancestry": "Elfo",
+            "feats" :
+            [
+                {
+                    "name" : "ABANDONADO",
+                    "description" : "Testemunhar o envelhecimento e morte de seus amigos encheu\nvocê de uma pesada morosidade que o protege contra emoções\nnocivas Você recebe +1 de bônus de circunstância em jogadas de\nsalvamento contra efeitos de emoção. Quando rolar um sucesso\nem uma jogada de salvamento contra um efeito de emoção, trate\no resultado como um sucesso crítico.",
+                    "effects" : [
+                        {
+                            "type" : "EMOTIONALRESILIENCE",
+                            "description" : "Ganha +1 em jogadas de salvamento contra efeitos de emoção e trata sucessos como sucessos críticos."
+                        }
+                    ]
+                },
+                {
+                    "name" : "ELFO LIGEIRO",
+                    "description" : "Seus músculos de caminhada são bastante trabalhados. \nSua velocidade aumenta em 1,5 metros.",
+                    "effects" : [
+                        {
+                            "type" : "INCREASEDSPEED",
+                            "description" : "Sua velocidade aumenta em 1,5 metros."
+                        }
+                    ]
+                },
+                {
+                    "name" : "FAMILIARIDADE COM ARMAS ÉLFICAS",
+                    "description" : "Você prefere arcos e outras armas elegantes. Você é treinado com\narcos curtos, arcos curtos compostos, arcos longos, arcos longos\ncompostos, espadas longas e rapieiras.\nVocê também obtém acesso a todas as armas élficas incomuns.\nPara determinar sua proficiência, armas élficas marciais são\nconsideradas armas simples, enquanto armas élficas avançadas\nsão consideradas armas marciais.",
+                    "effects" : [
+                        {
+                            "type" : "ELVENWEAPONFAMILIARITY",
+                            "description" : "Treinado com várias armas élficas e tem acesso a armas élficas incomuns."
+                        }
+                    ]
+                },
+                {
+                    "name" : "LONGEVIDADE ANCESTRAL",
+                    "description" : "Você acumulou uma ampla gama de conhecimento empírico ao\nlongo dos anos. Durante suas preparações diárias, você pode\nrefletir sobre suas experiências de vida para ganhar a graduação\nde proficiência treinado em uma perícia à sua escolha. Esta\nproficiência dura até você realizar suas preparações novamente.\nComo esta proficiência é temporária, você não pode usá-la como\npré-requisito para um incremento de perícia ou alguma opção de\npersonagem permanente (como um talento, por exemplo).",
+                    "effects" : [
+                        {
+                            "type" : "TEMPORARYPROFICIENCY",
+                            "description" : "Pode ganhar treinamento temporário em uma perícia de sua escolha após preparações diárias."
+                        }
+                    ]
+                },
+                {
+                    "name" : "MAGIA EXTRATERRENA",
+                    "description" : "Seu misticismo élfico se manifesta como uma magia arcana\nsimples, mesmo que você não seja formalmente treinado em\nmagia. Escolha um truque mágico da lista de magias arcanas\n(página 307). Você pode conjurar este truque mágico como\numa magia arcana inata à vontade. Um truque mágico é\nelevado para um nível de magia igual à metade de seu nível\narredondado para cima.",
+                    "effects" : [
+                        {
+                            "type" : "ELVENMAGIC",
+                            "description" : "Pode conjurar um truque mágico arcana escolhido à vontade como magia inata."
+                        }
+                    ]
+                },
+                {
+                    "name" : "SABER ÉLFICO",
+                    "description" : "Você estudou as artes élficas tradicionais, aprendendo\nsobre magia arcana e o mundo ao seu redor. Você recebe a\ngraduação de proficiência treinado em Arcanismo e Natureza.\nSe algum benefício fosse torná-lo automaticamente treinado\nem uma dessas perícias (por sua biografia ou classe, por\nexemplo), em vez disso você se torna treinado em uma outra\nperícia à sua escolha. Você também se torna treinado em\nSaber Élfico.",
+                    "effects" : [
+                        {
+                            "type" : "ELVENLORE",
+                            "description" : "Treinado nas perícias Arcanismo, Natureza e Saber Élfico."
+                        }
+                    ]
+                },
+                {
+                    "name" : "SEMBLANTE INABALÁVEL",
+                    "description" : "Seu controle místico e meditações permitem que você resista\na influências externas sobre sua consciência. Sempre que for\nafetado por um efeito mental que dura pelo menos 2 rodadas,\nvocê pode reduzir a duração em 1 rodada.\nVocê ainda precisa dormir naturalmente, mas trata suas\njogadas de salvamento contra efeitos que lhe fariam cair\nem sono como um grau de sucesso melhor. Isto protege\nsomente contra efeitos de sono, não contra outras formas\nde inconsciência.",
+                    "effects" : [
+                        {
+                            "type" : "STEADYMENTALITY",
+                            "description" : "Pode reduzir a duração de efeitos mentais e trata jogadas contra efeitos de sono um grau de sucesso melhor."
+                        }
+                    ]
+                }
+                
+            ]
+        },
+        {
+            "ancestry" : "Gnomo",
+            "feats" :
+            [
+                {
+                    "name" : "COMPANHEIRO DAS FADAS",
+                    "description" : "Sua ligação próxima com as fadas lhe garante uma recepção\nmais calorosa das criaturas do Primeiro Mundo e lhe fornece\nferramentas para frustrar os truques delas. Você recebe +2 de\nbônus de circunstância em testes de Percepção e jogadas de\nsalvamento realizados contra fadas.\nAdicionalmente, sempre que encontrar uma criatura fada\nem uma situação social, você pode imediatamente realizar\num teste de Diplomacia para Impressionar essa criatura\nsem precisar conversar por 1 minuto. Você sofre –5 de\npenalidade no teste. Se falhar, você pode conversar com ela por 1 minuto e realizar um novo teste ao final desse\nperíodo (em vez de aceitar o resultado de uma falha ou falha crítica).\nEspecial Se tiver o talento de perícia Cumprimento Caloroso,\nvocê não sofre a penalidade em seu teste de Diplomacia imediato se o alvo for uma fada.",
+                    "effects" : [
+                        {
+                            "type" : "FAEPROTECTION",
+                            "description" : "Recebe +2 em testes de Percepção e jogadas de salvamento contra fadas. Pode tentar imediatamente impressionar fadas com penalidade. Se falhar, tem uma segunda chance após conversar por 1 minuto. Se tiver o talento Cumprimento Caloroso, não sofre a penalidade contra fadas."
+                        }
+                    ]
+                },
+                {
+                    "name" : "CÚMPLICE ANIMAL",
+                    "description" : "Você cria uma conexão com um animal, que se torna\nmagicamente ligado a você. Você adquire um familiar\nutilizando as regras da página 217. O tipo de animal fica à sua\nescolha, mas a maioria dos gnomos escolhe animais com uma\nVelocidade de escavação.",
+                    "effects" : [
+                        {
+                            "type" : "ANIMALFAMILIAR",
+                            "description" : "Recebe um familiar animal. A escolha do tipo de animal é livre, com preferência por animais com Velocidade de escavação."
+                        }
+                    ]
+                },                
+                {
+                    "name" : "ELOCUCIONISTA DE ESCAVADORES",
+                    "description" : "Você reconhece os sons de criaturas do solo como seu\npróprio idioma peculiar. Você pode fazer perguntas,\nreceber respostas e usar a perícia Diplomacia com animais\nque tenham uma Velocidade de escavação, como cães-da-\npradaria, esquilos-terrestre, texugos e toupeiras. O MJ\ndetermina quais animais são considerados escavadores para\nesta habilidade.",
+                    "effects" : [
+                        {
+                            "type" : "DIGGERELOCUTIONIST",
+                            "description" : "Pode se comunicar e usar Diplomacia com animais que escavam. A aplicabilidade de quais animais se qualificam fica a critério do MJ."
+                        }
+                    ]
+                },
+                {
+                    "name" : "FAMILIARIDADE COM ARMAS GNÔMICAS",
+                    "description" : "Você prefere armas ligadas a seu povo, como lâminas com\nformatos curvados e peculiares. Você é treinado com glaives\ne kukris.\nVocê também obtém acesso a todas as armas gnômicas\nincomuns. Para determinar sua proficiência, armas gnômicas\nmarciais são consideradas armas simples, enquanto armas\ngnômicas avançadas consideradas são armas marciais.",
+                    "effects" : [
+                        {
+                            "type" : "GNOMICWEAPONPROFICIENCY",
+                            "description" : "Treinado com glaives e kukris. Recebe acesso a armas gnômicas incomuns; as marciais são consideradas simples e as avançadas são consideradas marciais."
+                        }
+                    ]
+                },
+                {
+                    "name" : "MAGIA DO PRIMEIRO MUNDO",
+                    "description" : "Sua conexão com o Primeiro Mundo lhe concede uma magia\nprimal inata, muito similar à das fadas. Escolha um truque mágico\nda lista de magias primais (página 314). Você pode conjurar este\ntruque mágico como uma magia primal inata à vontade. Um\ntruque mágico é elevado para um nível de magia igual à metade\nde seu nível arredondado para cima.",
+                    "effects" : [
+                        {
+                            "type" : "FIRSTWORLDMAGIC",
+                            "description" : "Possui um truque mágico primal inato à vontade, que é elevado em nível conforme o nível do personagem."
+                        }
+                    ]
+                },                
+                {
+                    "name" : "OBSESSÃO GNÔMICA",
+                    "description" : "Você pode ter uma natureza volúvel, mas mergulha de cabeça\nquando um tópico prende sua atenção. Selecione uma perícia de\nSaber. Você recebe a graduação de proficiência treinado nessa\nperícia. No 2º nível, você recebe a graduação de proficiência de\nespecialista no Saber escolhido e no Saber concedido por sua\nbiografia, se houver. No 7º nível você recebe a graduação de\nproficiência de mestre nestas perícias de Saber, e no 15º nível\nvocê recebe a graduação de proficiência lendário em ambas.",
+                    "effects" : [
+                        {
+                            "type" : "GNOMICOBSESSION",
+                            "description" : "Recebe proficiências graduais em uma perícia de Saber escolhida, progredindo de treinado a lendário conforme o nível do personagem."
+                        }
+                    ]
+                },
+                {
+                    "name" : "SENTIR ILUSÃO",
+                    "description" : "Seus ancestrais viviam envoltos e encobertos em ilusões\ne, como resultado, você tem uma habilidade natural para distinguir ilusões mágicas. Você recebe +1 de bônus de circunstância em testes de\nPercepção e salvamentos de Vontade contra ilusões.\nQuando estiver a até 3 metros de uma ilusão que pode ser desacreditada, o MJ rola um\nteste secreto para você desacreditá-la mesmo que você não gaste uma ação para Interagir\ncom a ilusão.",
+                    "effects" : [
+                        {
+                            "type" : "ILLUSIONSENSE",
+                            "description" : "Recebe +1 de bônus em testes de Percepção e salvamentos de Vontade contra ilusões. Ganha teste secreto para desacreditar ilusões próximas."
+                        }
+                    ]
+                }                
+            ]
+        }
+        {
+            "ancestry" : "Goblin",
+            "feats" :
+            [
+                {
+                    "name" : "CANÇÃO GOBLIN [UMA ACAO]",
+                    "description" : "Você canta canções goblins irritantes, distraindo seus adversários\ncom letras bobas e repetitivas. Faça um teste de Performance\ncontra a CD de Vontade de um único inimigo a até 9 metros. Este\nefeito possui todos os traços e restrições comuns de um teste\nde Performance.\nVocê pode afetar até dois alvos dentro do alcance se tiver\nproficiência de especialista em Performance, quatro se tiver\nproficiência de mestre e oito se tiver proficiência lendária.\nSucesso Crítico O alvo sofre –1 de penalidade de estado em\ntestes de Percepção e salvamentos de Vontade por 1 minuto.\nSucesso O alvo sofre –1 de penalidade de estado em testes de\nPercepção e salvamentos de Vontade por 1 rodada.\nFalha Crítica O alvo fica temporariamente imune a tentativas\nde usar Canção Goblin por 1 hora.",
+                    "effects" : [
+                        {
+                            "type" : "GOBLINSONG",
+                            "description" : "Pode fazer um teste de Performance para distrair e penalizar adversários com canções goblins. O número de alvos e os efeitos dependem do resultado do teste e da proficiência em Performance."
+                        }
+                    ]
+                },
+                {
+                    "name" : "CATADOR DA CIDADE",
+                    "description" : "Você sabe que os maiores tesouros frequentemente parecem lixo,\ne zomba de quem joga fora sucatas perfeitamente boas. Você\nrecebe +1 de bônus de circunstância em testes para Subsistir,\ne pode usar Sociedade ou Sobrevivência para Subsistir em\num assentamento.\nQuando Subsistir em um assentamento, você também coleta\nlixo valioso jogado fora pelos bobos pernalongas. Você pode\nGanhar Proventos usando Sociedade ou Sobrevivência ao mesmo tempo em que Subsiste sem gastar quaisquer dias\nadicionais de recesso. Você também recebe +1 de bônus de\ncircunstância neste teste.\nEspecial Se possuir a herança goblin bucho-de-ferro, aumente\no bônus para +2.",
+                    "effects" : [
+                        {
+                            "type" : "CITYSCAVENGER",
+                            "description" : "Recebe bônus em testes para Subsistir e para Ganhar Proventos em assentamentos, e pode combinar ambas atividades. Potencial bônus adicional se possuir herança específica."
+                        }
+                    ]
+                },
+                {
+                    "name" : "CAVALEIRO BRUSCO",
+                    "description" : "Você é especialmente bom em cavalgar montarias goblinoides.\nVocê recebe o talento Cavalgar, mesmo que não atenda a seus\npré-requisitos. Você também recebe +1 de bônus de circunstância\nem testes de Natureza para usar Comandar um Animal em um\ncão goblin ou lobo de montaria. Você sempre pode selecionar\num lobo como seu companheiro animal, mesmo se devesse\nselecionar somente um companheiro animal com a habilidade\nespecial montaria, como descrito na montaria aliada de\num campeão.",
+                    "effects" : [
+                        {
+                            "type" : "BRUSKRIDER",
+                            "description" : "Recebe talento Cavalgar e bônus em testes para Comandar animais goblinoides. Pode sempre escolher lobo como companheiro animal."
+                        }
+                    ]
+                },                
+                {
+                    "name" : "FAMILIARIDADE COM ARMAS GOBLINOIDES",
+                    "description" : "Outros podem olhar para elas com desdém, mas você sabe que\nas armas de seu povo são tão efetivas quanto afiadas. Você é\ntreinado com cortacães e fatia-cavalos.\nVocê também obtém acesso a todas as armas goblinoides\nincomuns. Para determinar sua proficiência, armas goblinoides\nmarciais são consideradas armas simples, enquanto armas\ngoblinoides avançadas consideradas são armas marciais.",
+                    "effects" : [
+                        {
+                            "type" : "GOBLINOIDWEAPONFAMILIARITY",
+                            "description" : "Treinado com armas específicas goblinoides e acesso a armas goblinoides incomuns."
+                        }
+                    ]
+                },
+                {
+                    "name" : "FUNILEIRO DE SUCATA",
+                    "description" : "Você pode criar ferramentas úteis mesmo a partir de\nsucatas retorcidas ou enferrujadas. Quando usar a perícia\nManufatura para Manufaturar, você pode criar itens de nível\n0 a partir do lixo (incluindo armas, mas não armaduras). Isto\nreduz o Preço a um quarto do valor normal, mas sempre\nresulta em um item de má qualidade. Itens de má qualidade\nnormalmente impõem uma penalidade, mas você não sofre\nesta penalidade quando usar itens de má qualidade que\ntenha criado.\nVocê também pode usar sucatas encontradas no lixo para\neconomizar dinheiro enquanto Manufatura um item. Isto\nlhe concede um desconto no item como se tivesse gastado\n1 dia adicional de trabalho para reduzir o custo, mas o\nitem é obviamente feito de lixo. A critério do MJ, isto pode\nafetar o valor de revenda do item dependendo do gosto\ndo comprador.",
+                    "effects" : [
+                        {
+                            "type" : "SCRAPTINKERER",
+                            "description" : "Capaz de criar itens de nível 0 com lixo e economizar em Manufatura usando sucatas. Não sofre penalidade de itens de má qualidade criados por si mesmo."
+                        }
+                    ]
+                },
+                {
+                    "name" : "MUITO SORRATEIRO",
+                    "description" : "Os povos mais altos raramente prestam atenção nas sombras\nsob seus pés, e você tira vantagem disto. Você pode se mover\n1,5 metros a mais quando usar a ação Esgueirar, até o limite de\nsua Velocidade.\nAdicionalmente, enquanto continuar a usar ações de\nEsgueirar em sequência durante seu turno, você não se torna\nobservado — mesmo que não tenha cobertura (ou cobertura\nmaior) ou que não esteja ocultado — ao final de uma dessas\nações se, ao final de seu turno, tiver cobertura (ou cobertura\nmaior) ou estiver ocultado.",
+                    "effects" : [
+                        {
+                            "type" : "VERYSNEAKY",
+                            "description" : "Pode se mover mais quando Esgueirando e não se torna observado sob certas condições quando usa Esgueirar consecutivamente."
+                        }
+                    ]
+                },                
+                {
+                    "name" : "PASSADELA GOBLIN [REACAO]",
+                    "description" : "Pré-requisitos: Um aliado termina uma ação de movimento adjacente a você.\nVocê aproveita o movimento de seu aliado para ajustar sua posição. Você Dá um Passo.",
+                    "effects" : [
+                        {
+                            "type" : "GOBLINSCUTTLE",
+                            "description" : "Ao término do movimento de um aliado adjacente, pode ajustar a própria posição dando um passo."
+                        }
+                    ]
+                },
+                {
+                    "name" : "TACA FOGO!",
+                    "description" : "O fogo o fascina. Suas magias e itens alquímicos que causem dano de fogo recebem um bônus\nde estado no dano igual à metade do nível da magia ou um quarto do nível do item (mínimo 1).\nVocê também recebe +1 de bônus de estado em qualquer dano persistente de fogo que causar.",
+                    "effects" : [
+                        {
+                            "type" : "BURNIT!",
+                            "description" : "Magias e itens alquímicos que causem dano de fogo recebem bônus de estado no dano. Bônus adicional em dano persistente de fogo causado."
+                        }
+                    ]
+                },
+                {
+                    "name" : "SABER GOBLIN",
+                    "description" : "Você coletou diversas habilidades e contos de sua comunidade goblin. Você recebe a graduação\nde proficiência treinado em Furtividade e Natureza. Se algum benefício fosse torná-lo\nautomaticamente treinado em uma dessas perícias (por sua biografia ou classe, por exemplo),\nem vez disso você se torna treinado em uma outra perícia à sua escolha. Você também se torna\ntreinado em Saber Goblin.",
+                    "effects" : [
+                        {
+                            "type" : "GOBLINLORE",
+                            "description" : "Recebe graduação de proficiência treinado em Furtividade e Natureza, com capacidade de alteração baseada em outros benefícios. Adicionalmente, torna-se treinado em Saber Goblin."
+                        }
+                    ]
+                }
+            ]                
+        }
+        {
+            "ancestry" : "Halfling",
+            "feats" :
+            [
+                {
+                    "name" : "DISTRAÇÃO NAS SOMBRAS",
+                    "description" : "Você aprendeu a permanecer escondido usando os povos maiores como uma distração para evitar chamar a atenção para si. Você pode usar criaturas que sejam pelo menos um tamanho maior do que você (normalmente Médio ou maior) como cobertura para as ações Esconder e Esgueirar, embora ainda não possa usar essas criaturas como cobertura para outros usos, como para a ação Obter Cobertura.",
+                    "effects" : [
+                        {
+                            "type" : "SHADOWDODGE",
+                            "description" : "Permite usar criaturas de tamanho maior como cobertura para ações de Esconder e Esgueirar."
+                        }
+                    ]
+                },
+                {
+                    "name" : "FAMILIARIDADE COM ARMAS HALFLINGS",
+                    "description" : "Você prefere as armas halflings tradicionais e aprendeu a usá-las mais efetivamente. Você é treinado com cajados-funda halfling, espadas curtas e fundas. Você também obtém acesso a todas as armas halflings incomuns. Para determinar sua proficiência, armas halflings marciais são consideradas armas simples, enquanto armas halflings avançadas são consideradas armas marciais.",
+                    "effects" : [
+                        {
+                            "type" : "HALFLINGWEAPONFAMILIARITY",
+                            "description" : "Treinado com armas halfling tradicionais, com acesso a armas halflings incomuns. Armas marciais halflings são tratadas como armas simples."
+                        }
+                    ]
+                },
+                {
+                    "name" : "FUNDEIRO TITÂNICO",
+                    "description" : "Você aprendeu como usar sua funda para derrubar criaturas enormes. Quando acertar um ataque com uma funda contra uma criatura Grande ou maior, aumente o tamanho do dado de dano da arma em um passo (detalhes sobre como aumentar o tamanho de dados de dano de armas podem ser encontrados na página 279).",
+                    "effects" : [
+                        {
+                            "type" : "TITANSLINGER",
+                            "description" : "Ao atingir criaturas Grande ou maiores com uma funda, aumenta o tamanho do dado de dano da arma em um passo."
+                        }
+                    ]
+                },                
+                {
+                    "name" : "HALFLING ATENTO",
+                    "description" : "Seu estilo de vida comunitário faz com que você preste bastante atenção nas pessoas ao seu redor, permitindo-o perceber mais facilmente aqueles agindo fora do normal. Você recebe +2 de bônus de circunstância em testes de Percepção quando usar a ação básica Sentir Motivação para perceber personagens encantados ou possuídos. Se você não estiver ativamente usando Sentir Motivação em um personagem encantado ou possuído, o MJ rola um teste secreto para determinar se você percebe o encantamento ou possessão mesmo sem estar tentando fazer isso ativamente. Esse teste secreto não recebe o bônus de circunstância concedido por este talento e ainda sofre –2 de penalidade de circunstância. Além do seu uso comum para testes de perícia, você pode usar a ação básica Auxiliar para conceder a uma outra criatura um bônus em uma jogada de salvamento (ou a outro teste) para superar encantamento ou possessão. Como de costume para Auxiliar, você precisa se preparar ao usar uma ação em seu turno para encorajar a criatura a lutar contra o efeito.",
+                    "effects" : [
+                        {
+                            "type" : "ENHANCEDPERCEPTION",
+                            "description" : "Recebe +2 de bônus de circunstância em testes de Percepção ao usar Sentir Motivação contra personagens encantados ou possuídos. MJ pode rolar um teste secreto para detectar encantamento ou possessão, mesmo sem tentativa ativa, com –2 penalidade. Pode auxiliar outra criatura contra encantamento ou possessão."
+                        }
+                    ]
+                },
+                {
+                    "name" : "HALFLING LIBERTO",
+                    "description" : "Você foi forçado a trabalhar, seja pressionado a um contrato de servidão ou agrilhoado pela cruel escravidão — mas escapou e treina constantemente para nunca mais ser pego. Sempre que rolar um sucesso em um teste para Escapar ou em uma jogada de salvamento contra um efeito que imporia a condição agarrado ou restringido, trate o resultado como um sucesso crítico. Sempre que uma criatura rolar uma falha em um teste para lhe Agarrar, trate o resultado dela como uma falha crítica. Se uma criatura usar a habilidade Atracar em você, ela deve obter sucesso em um teste de Atletismo para conseguir atracar em vez de fazê-lo automaticamente.",
+                    "effects" : [
+                        {
+                            "type" : "ESCAPECAPABILITY",
+                            "description" : "Trata sucessos em testes para Escapar ou contra agarrado/restringido como sucesso crítico. Falhas de criaturas tentando Agarrar são tratadas como falha crítica. Criaturas devem obter sucesso em Atletismo para Atracar."
+                        }
+                    ]
+                },
+                {
+                    "name" : "PÉS FIRMES",
+                    "description" : "Seja mantendo o equilíbrio ou fazendo uma escalada complicada, seus pés peludos calejados encontram apoio facilmente. Quando rolar um sucesso em um teste de Acrobatismo para se Equilibrar ou em um teste de Atletismo para Escalar, trate o resultado como um sucesso crítico. Você não fica desprevenido quando tentar Escalar ou se Equilibrar.",
+                    "effects" : [
+                        {
+                            "type" : "STURDYFOOTING",
+                            "description" : "Trata sucessos em testes de Acrobatismo para Equilibrar ou Atletismo para Escalar como sucesso crítico. Não fica desprevenido ao Escalar ou Equilibrar."
+                        }
+                    ]
+                },                
+                {
+                    "name" : "SABER HALFLING",
+                    "description" : "Você cuidadosamente aprendeu como manter seu equilíbrio e como ficar nas sombras para se proteger, habilidades importantes passadas de geração em geração na tradição halfling. Você recebe a graduação de proficiência treinado em Acrobatismo e Furtividade. Se algum benefício fosse torná-lo automaticamente treinado em uma dessas perícias (por sua biografia ou classe, por exemplo), em vez disso você se torna treinado em uma outra perícia à sua escolha. Você também se torna treinado em Saber Halfling.",
+                    "effects" : [
+                        {
+                            "type" : "PROFICIENCYBONUS",
+                            "description" : "Recebe graduação de proficiência treinado em Acrobatismo e Furtividade. Se já treinado em alguma destas por outro meio, pode escolher uma outra perícia para ser treinado. Também torna-se treinado em Saber Halfling."
+                        }
+                    ]
+                },
+                {
+                    "name" : "SORTE DE HALFLING [REACAO]",
+                    "description" : "Frequência uma vez por dia. Acionamento Você falha em um teste de perícia ou jogada de salvamento. Sua sorte e alto astral faz parecer que o azar o evita — e até certo ponto isso é verdade. Você pode rerrolar o teste acionador, mas deve usar o novo resultado, mesmo que seja pior que sua primeira rolagem.",
+                    "effects" : [
+                        {
+                            "type" : "LUCKREROLL",
+                            "description" : "Uma vez por dia, ao falhar em um teste de perícia ou jogada de salvamento, pode rerrolar o teste, mas deve aceitar o novo resultado, mesmo que seja pior."
+                        }
+                    ]
+                }                
+            ]
+        }
+        {
+            "ancestry" : "Human",
+            "feats" :
+            [
+                {
+                    "name" : "AMBIÇÃO NATURAL",
+                    "description" : "Você foi criado para ser ambicioso e sempre sonhar alto, o que\no levou a progredir rapidamente em seu campo escolhido. Você\nrecebe um talento de classe de 1º nível para sua classe, mas deve\natender aos seus pré-requisitos normalmente. Durante a criação\ndo personagem, você pode escolher o talento geral em qualquer\nmomento posterior do processo de criação para que possa atingir\nos pré-requisitos necessários.",
+                    "effects" : [
+                        {
+                            "type" : "TALENTGAIN",
+                            "description" : "Recebe um talento de classe de 1º nível para sua classe."
+                        }
+                    ]
+                },
+                {
+                    "name" : "ARMAMENTO NÃO CONVENCIONAL",
+                    "description" : "Você é familiarizado com uma arma específica, potencialmente\nde outra ancestralidade ou cultura. Escolha uma arma incomum\nsimples ou marcial com um traço correspondente a uma\nancestralidade (como anão, goblins ou orc) ou que seja comum em\noutra cultura. Você obtém acesso a essa arma e a considera uma\narma simples para determinar sua proficiência.\nSe for treinado em todas as armas marciais, você pode escolher\numa arma avançada incomum com um desses traços. Você\nobtém acesso a essa arma e a considera uma arma marcial para\ndeterminar a sua proficiência.",
+                    "effects" : [
+                        {
+                            "type" : "WEAPONACCESS",
+                            "description" : "Obtém acesso a uma arma incomum e a considera uma arma simples ou marcial para determinar sua proficiência."
+                        }
+                    ]
+                },
+                {
+                    "name" : "NATUREZA COOPERATIVA",
+                    "description" : "A vida curta dos humanos o concede uma grande capacidade\nde perspectiva além de ensiná-lo desde cedo a colocar as\ndiferenças de lado e cooperar com outras pessoas para alcançar\na grandeza. Você recebe +4 de bônus de circunstância em testes\npara Auxiliar.",
+                    "effects" : [
+                        {
+                            "type" : "SKILLBONUS",
+                            "description" : "Recebe +4 de bônus de circunstância em testes para Auxiliar."
+                        }
+                    ]
+                },
+                {
+                    "name" : "OBSTINAÇÃO ALTIVA",
+                    "description" : "Seu ego poderoso dificulta que outras pessoas lhe deem\nordens. Se rolar um sucesso em uma jogada de salvamento\ncontra um efeito que tenta controlar diretamente suas\nações, trate o resultado como um sucesso crítico. Se\numa criatura rolar uma falha em um teste para Coagi-\nlo usando Intimidação, trate o resultado como uma falha\ncrítica (portanto, ela não pode tentar Coagi-lo novamente\npor 1 semana).",
+                    "effects" : [
+                        {
+                            "type" : "CRITICALSUCCESS",
+                            "description" : "Trata um sucesso em uma jogada de salvamento contra controle como um sucesso crítico."
+                        },
+                        {
+                            "type" : "CRITICALFAILURE",
+                            "description" : "Se uma criatura falha ao tentar Coagi-lo, o resultado é tratado como uma falha crítica."
+                        }
+                    ]
+                },
+                {
+                    "name" : "PERÍCIA NATURAL",
+                    "description" : "Sua engenhosidade lhe permite aprender uma ampla variedade\nde perícias. Você recebe a graduação de proficiência treinado em\nduas perícias à sua escolha.",
+                    "effects" : [
+                        {
+                            "type" : "SKILLPROFICIENCY",
+                            "description" : "Recebe a graduação de proficiência treinado em duas perícias à sua escolha."
+                        }
+                    ]
+                },
+                {
+                    "name" : "TREINAMENTO GERAL",
+                    "description" : "Sua adaptabilidade se manifesta no domínio de várias habilidades\núteis. Você recebe um talento geral de 1º nível, mas deve atender\naos seus pré-requisitos normalmente. Durante a criação do\npersonagem, você pode escolher o talento geral em qualquer momento posterior do processo de criação para que possa atingir\nos pré-requisitos necessários.\nEspecial: Você pode selecionar este talento várias vezes,\nescolhendo um talento diferente a cada vez.",
+                    "effects" : [
+                        {
+                            "type" : "GENERALTALENT",
+                            "description" : "Recebe um talento geral de 1º nível."
+                        }
+                    ]
+                },
+                {
+                    "name" : "TRUQUE MÁGICO ADAPTADO",
+                    "description" : "Pré-requisitos: característica de classe de conjuração.\nAtravés do estudo de várias tradições mágicas, você alterou\numa magia para adequá-la ao seu estilo de conjuração.\nEscolha um truque mágico e uma tradição mágica diferente\nda sua. Se tiver um repertório de magia ou um grimório,\nsubstitua um dos seus truques mágicos conhecidos ou que\npossua em seu grimório pela magia escolhida. Se preparar\nsuas magias sem um grimório (se for um clérigo ou druida,\npor exemplo), um de seus truques mágicos deve sempre ser\na magia escolhida, e os outros são preparados normalmente.\nVocê pode conjurar este truque mágico como uma magia da\ntradição de sua classe.\nSe trocar ou retreinar este truque mágico posteriormente, você\npode escolher um substituto da mesma tradição alternativa ou de\noutra diferente",
+                    "effects" : [
+                        {
+                            "type" : "MAGICADAPTATION",
+                            "description" : "Altera uma magia para adequá-la ao seu estilo de conjuração, escolhendo um truque mágico de outra tradição."
+                        }
+                    ]
+                },
+                {
+                    "name" : "ATAVISMO ÉLFICO",
+                    "description" : "Seu sangue élfico é particularmente forte, concedendo-lhe\ncaracterísticas élficas muito mais fortes do que as de um meio-\nelfo típico. Você também pode ter sido criado entre elfos,\nimerso na herança de seus ancestrais élficos. Você recebe\nos benefícios da herança de elfo de seus pais ou ancestrais\nelfos. Normalmente, você não pode selecionar uma herança\nque aprimore ou dependa de uma característica élfica que\nnão possua. Por exemplo, você não poderia receber a\nhabilidade visão no escuro de elfo das cavernas se não\ntiver visão na penumbra. Nestes casos, a critério do MJ,\nvocê pode receber um benefício diferente.\nEspecial: Você pode selecionar este talento apenas no 1º nível, e não\npode retreiná-lo (nem para aprendê-lo nem para trocá-lo por outro).",
+                    "effects" : [
+                        {
+                            "type" : "ELFHERITAGE",
+                            "description" : "Recebe os benefícios da herança de elfo de seus pais ou ancestrais."
+                        }
+                    ]
+                },
+                {
+                    "name" : "FAMILIARIDADE COM ARMAS ÓRQUICAS",
+                    "description" : "Em combate, você prefere as armas brutais tradicionais de seus\nancestrais orcs. Você é treinado com falciones e machados longos.\nVocê também obtém acesso a todas as armas órquicas incomuns.\nPara determinar sua proficiência, armas órquicas marciais são\nconsideradas armas simples, enquanto armas órquicas avançadas\nsão consideradas armas marciais.",
+                    "effects" : [
+                        {
+                            "type" : "ORCWEAPONACCESS",
+                            "description" : "É treinado com falciones e machados longos e obtém acesso a todas as armas órquicas incomuns."
+                        }
+                    ]
+                },
+                {
+                    "name" : "FEROCIDADE ÓRQUICA [REACAO]",
+                    "description" : "Frequência: uma vez por dia.\nAcionamento: Você seria reduzido a 0 Pontos de Vida, mas não\nmorto imediatamente.\nA ferocidade em batalha corre pelo seu sangue, e você se recusa\na cair por causa de seus ferimentos. Você evita ser nocauteado e\npermanece com 1 Ponto de Vida, e sua condição ferido aumenta\nem 1 ponto.",
+                    "effects" : [
+                        {
+                            "type" : "FEROCITY",
+                            "description" : "Evita ser nocauteado e permanece com 1 Ponto de Vida."
+                        },
+                        {
+                            "type" : "WOUNDEDCONDITION",
+                            "description" : "Sua condição ferido aumenta em 1 ponto."
+                        }
+                    ]
+                },
+                {
+                    "name" : "PACIFICADOR MONSTRUOSO",
+                    "description" : "Sua dupla natureza humana e órquica lhe concede uma\nperspectiva única, permitindo que você compreenda a\nlacuna entre humanos e as muitas criaturas inteligentes por\neles consideradas monstros. Você recebe +1 de bônus de\ncircunstância em testes de Diplomacia contra criaturas não-\nhumanoides inteligentes e contra humanoides marginalizados\nna sociedade humana (a critério do MJ, mas geralmente\nincluindo ao menos gigantes, goblins, kobolds e orcs). Você\ntambém recebe este bônus em testes de Percepção para Sentir\na Motivação dessas criaturas.",
+                    "effects" : [
+                        {
+                            "type" : "DIPLOMACYBONUS",
+                            "description" : "Recebe +1 de bônus de circunstância em testes de Diplomacia contra criaturas não-humanoides inteligentes e humanoides marginalizados."
+                        },
+                        {
+                            "type" : "PERCEPTIONBONUS",
+                            "description" : "Recebe +1 de bônus de circunstância em testes de Percepção para Sentir a Motivação dessas criaturas."
+                        }
+                    ]
+                },
+                {
+                    "name" : "SUPERSTIÇÃO ÓRQUICA [REACAO]",
+                    "description" : "Acionamento: Você tenta uma jogada de salvamento contra uma\nmagia ou efeito mágico, antes de efetuar a rolagem.\nVocê se defende contra magia com tradicionais superstições\nculturais órquicas. Você recebe +1 de bônus de circunstân-\ncia em sua jogada de salvamento contra a magia ou efeito\nmágico acionador.",
+                    "effects" : [
+                        {
+                            "type" : "MAGICDEFENSEBONUS",
+                            "description" : "Recebe +1 de bônus de circunstância em sua jogada de salvamento contra magia ou efeito mágico."
+                        }
+                    ]
+                },
+                {
+                    "name" : "VISÃO ÓRQUICA",
+                    "description" : "Pré-requisitos: visão na penumbra.\nSeu sangue orc é forte o suficiente para concedê-lo a visão\naguçada de seus ancestrais orcs. Você recebe visão no escuro,\npermitindo-lhe enxergar na escuridão e luz fraca tão bem quanto é\ncapaz de enxergar na luz brilhante, embora sua visão na escuridão\nseja em preto e branco.\nEspecial: Você pode selecionar este talento apenas no 1º nível,\ne não pode retreiná-lo (nem para aprendê-lo nem para trocá-lo\npor outro).",
+                    "effects" : [
+                        {
+                            "type" : "DARKVISION",
+                            "description" : "Recebe visão no escuro, permitindo-lhe enxergar na escuridão e luz fraca."
+                        }
+                    ]
+                }                
+            ]
+        }
+    ]
+}
+
+{
+    "name" : "",
+    "description" : "",
+    "effects" : [
+        {
+            "type" : "",
+            "description" : ""
+        }
+    ]
+}
