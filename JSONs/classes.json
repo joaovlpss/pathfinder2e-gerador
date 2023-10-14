@@ -1,0 +1,712 @@
+{
+    "Classes" :
+    [
+        {
+            "class" : "Alquimista",
+            "key" : "INT",
+            "pv" : "8",
+            "proficiencies" :
+            [
+                {
+                    "Percepção" : "Treinado"
+                },
+                {
+                    "Jogadas de Salvamento" :
+                    {
+                        "Treinado" : ["Vontade"],
+                        "Especialista" : ["Reflexos", "Fortitude"]
+                    }
+                },
+                {
+                    "Perícias" :
+                    {
+                        "Treinado" : ["Manufatura", "FREE", "FREE", "FREE"]
+                    }
+                },
+                {
+                    "Ataques" :
+                    {
+                        "Treinado" : ["Armas Simples", "Bombas Alquímicas", "Ataques Desarmados"]
+                    }
+                },
+                {
+                    "Defesas" :
+                    {
+                        "Treinado" : ["Armaduras Leves", "Sem Armadura"]
+                    }
+                },
+                {
+                    "CD De Classe/Magia" :
+                    {
+                        "Treinado" : "Alquimista"
+                    }
+                }
+            ],
+            "characteristics" :
+            [
+                {
+                    "name" : "Alquimia",
+                    "text" : "Você compreende as interações complexas de substâncias
+                    naturais e sobrenaturais e pode produzir itens alquímicos
+                    que atendam às suas necessidades. Você faz isto usando
+                    reagentes normais e a atividade Manufaturar, ou então
+                    usando reagentes infundidos especiais que lhe permitem
+                    criar itens temporários de forma rápida e sem custo. Com o tempo, você pode criar cada vez mais itens alquímicos
+                    sem custo, e os itens criados ficam cada vez mais poderosos
+                    — seu poder aumenta dramaticamente, deixando para trás
+                    aqueles que não compreendem sua ciência esquisita.
+                    Você recebe o talento Manufaturar Alquímicos (página
+                    264), mesmo se não atender aos seus pré-requisitos, e recebe
+                    as quatro fórmulas alquímicas comuns de 1º nível concedidas
+                    pelo talento. O catálogo de itens alquímicos é apresentado a
+                    partir da página 543. Você pode usar este talento para criar
+                    itens alquímicos desde que tenha as fórmulas dos itens em
+                    seu livro de fórmulas."
+                },
+                {
+                    "name" : "Reagentes Infundidos",
+                    "text" : "Você infunde reagentes com sua própria essência alquímica,
+                    permitindo-lhe criar itens alquímicos sem custo. Todos os
+                    dias, durante suas preparações diárias, você ganha uma
+                    quantidade de lotes de reagentes infundidos igual ao seu
+                    nível + seu modificador de Inteligência. Você pode usar estes
+                    reagentes para alquimia avançada ou Alquimia Rápida,
+                    descritos abaixo. Juntos, estes reagentes infundidos possuem um Volume leve.
+                    Quando fizer sua próxima preparação diária, os
+                    reagentes infundidos de suas preparações do dia
+                    anterior são instantaneamente destruídos, e efeitos não-
+                    permanentes dos itens infundidos das preparações do
+                    dia anterior são imediatamente encerrados. Embora
+                    reagentes infundidos sejam objetos físicos, eles não
+                    podem ser duplicados, preservados ou criados de qualquer
+                    outra forma que não seja suas preparações diárias.
+                    Quaisquer outros reagentes artificiais não possuem sua
+                    infusão pessoal e são inúteis para alquimia avançada ou
+                    Alquimia Rápida."
+                },
+                {
+                    "name" : "Alquimia Avançada",
+                    "text" : "Após produzir novos reagentes infundidos durante suas
+                    preparações diárias, você pode gastar lotes desses reagentes
+                    infundidos para criar itens alquímicos infundidos. Você
+                    não precisa realizar um teste de Manufatura para isto,
+                    e ainda pode ignorar a quantidade de dias normalmente
+                    requeridos para criar os itens e também quaisquer
+                    requerimentos de reagentes alquímicos. Seu nível de
+                    alquimia avançada é igual ao seu nível. Para cada lote
+                    de reagentes infundidos que gastar, escolha um item
+                    alquímico do seu nível de alquimia avançada ou inferior
+                    que conste em seu livro de fórmulas, e crie um lote de
+                    dois desse item. Estes itens possuem o traço infundido e
+                    mantêm sua potência por 24 horas ou até sua próxima
+                    preparação diária, o que ocorrer primeiro."
+                },
+                {
+                    "name" : "Alquimia Rápida",
+                    "text" : "Se precisar de um item alquímico específico repentinamente,
+                    você pode usar seus reagentes infundidos para criá-lo
+                    rapidamente com a ação Alquimia Rápida.
+                    
+                    ALQUIMIA RÁPIDA [ACAO]
+                    Custo: 1 lote de reagentes infundidos.
+                    Requerimentos: Você possui ferramentas de alquimista (página 290),
+                    a fórmula para o item alquímico sendo criado e uma mão livre.
+                    
+                    Você rapidamente mistura um item alquímico de curta
+                    duração para usar no momento. Você cria um único item
+                    alquímico do seu nível de alquimia avançada ou inferior que
+                    conste em seu livro de fórmulas sem precisar gastar o custo
+                    monetário normal em reagentes alquímicos ou realizar um
+                    teste de Manufatura. Este item possui o traço infundido,
+                    mas permanece potente somente até o início de seu
+                    próximo turno."
+                },
+                {
+                    "name" : "Livro de Fórmulas",
+                    "text" : "Um alquimista mantém registros meticulosos das fórmulas
+                    de cada item que é capaz de criar. Você recebe gratuitamente
+                    um livro de fórmulas padrão no valor de 10 pp ou menos
+                    (conforme detalhado na página 291). O livro de fórmulas
+                    contém as fórmulas para dois itens alquímicos comuns de 1º
+                    nível à sua escolha, além das fórmulas recebidas pelo talento
+                    Manufaturar Alquímicos e pelo seu campo de pesquisa.
+                    O catálogo de itens alquímicos é apresentado a partir da
+                    página 543.
+                    Cada vez que ganhar um nível, você adiciona as fórmulas
+                    de dois itens alquímicos comuns ao seu livro de fórmulas.
+                    Estas novas fórmulas podem ser de qualquer nível de item
+                    que você seja capaz de criar. Você aprende estas fórmulas
+                    automaticamente, mas também é possível encontrar ou comprar
+                    fórmulas adicionais em assentamentos ou de outros alquimistas,
+                    ou inventá-las com o talento Inventor (página 263)."
+                },
+                {
+                    "name" : "CAMPO DE PESQUISA",
+                    "text" : "Seus questionamentos sobre a natureza alquímica do
+                    universo o levaram a focar em um campo de pesquisa em
+                    particular. Você pode ter um diploma de uma instituição
+                    científica, corresponder com outros pesquisadores de
+                    seu campo ou trabalhar como um gênio solitário.
+                    Escolha um campo de pesquisa. Os campos de
+                    pesquisa são apresentados abaixo.
+                    
+                    Bombardeiro
+                    Você se especializa em explosões e outras reações
+                    alquímicas violentas. Você começa com as fórmulas
+                    adicionais para duas bombas alquímicas de 1º nível
+                    em seu livro de fórmulas .
+                    Quando arremessar uma bomba alquímica com o
+                    traço respingo, você pode causar o dano de respingo
+                    apenas em seu alvo primário em vez da área de
+                    respingo usual.
+                    
+                    Cirurgião
+                    Você se concentra em curar os outros com alquimia. Você
+                    começa com duas fórmulas adicionais em seu livro de
+                    fórmulas, escolhidas entre: antídoto menor, antipeste menor
+                    ou elixir da vida menor.
+                    Enquanto sua graduação de proficiência em Medicina
+                    for treinado ou melhor, você pode realizar um teste
+                    de Manufatura em vez de Medicina para quaisquer
+                    usos destreinados e treinados de Medicina.
+                    
+                    Mutagenista
+                    Você se especializa em transformações mutagênicas bizarras
+                    que sacrificam um aspecto físico ou psicológico de uma criatura para fortalecer o outro. 
+                    Você começa com aS fórmulas adicionais para dois mutagênicos de 1º nível em seu livro de fórmulas.
+                    Você pode receber o benefício de qualquer mutagênico,
+                    mesmo que não tenha sido formulado especificamente para
+                    você. Sempre que sua graduação de proficiência em armas
+                    simples aumentar, sua graduação de proficiência em ataques
+                    desarmados aumenta para a mesma graduação (a menos que
+                    já seja melhor)."
+                },
+                {
+                    "name" : "TALENTOS DE ALQUIMISTA",
+                    "text" : "No 1º nível e a cada nível par subsequente, você recebe um
+                    talento de classe de alquimista. Os talentos de classe de
+                    alquimista são descritos a partir da página 76."
+                }
+            ]
+        },
+        {
+            "class" : "Bárbaro",
+            "key" : "STR",
+            "pv" : "12",
+            "proficiencies" :
+            [
+                {
+                    "Percepção" : "Especialista"
+                },
+                {
+                    "Jogadas de Salvamento" :
+                    {
+                        "Treinado" : ["Reflexos"],
+                        "Especialista" : ["Fortitude", "Vontade"],
+                    }
+                },
+                {
+                    "Perícias" : 
+                    {
+                        "Treinado" : ["Atletismo", "FREE", "FREE", "FREE"]
+                    }
+                },
+                {
+                    "Ataques" :
+                    {
+                        "Treinado" :["Armas Simples", "Armas Marciais", "Ataques Desarmados"]
+                    }
+                },
+                {
+                    "Defesas" :
+                    {
+                        "Treinado" : ["Armaduras Leves", "Armaduras Médias", "Sem Armadura"]
+                    }
+                },
+                {
+                    "CD De Classe/Magia" :
+                    {
+                        "Treinado" : "Bárbaro"
+                    }
+                }
+            ],
+            "characteristics" :
+            [
+              {
+                "name" : "FÚRIA",
+                "text" : "Você ganha a ação Fúria, que lhe permite entrar em frenesi.
+                FÚRIA [ACAO]
+                Requerimentos: Você não está fatigado ou em fúria.
+                Você acessa seu furor interior e entra em fúria. Você recebe uma
+                quantidade de Pontos de Vida temporários igual ao seu nível mais seu modificador de Constituição. Este frenesi dura por 1 minuto,
+                até que não haja inimigos que você possa perceber ou até você
+                cair inconsciente — o que ocorrer primeiro. Você não pode encerrar
+                sua fúria voluntariamente. Enquanto estiver em fúria:
+                Você causa 2 pontos de dano adicionais com armas corpo a
+                corpo e ataques desarmados. Este dano adicional é dividido
+                pela metade se sua arma ou ataque desarmado for ágil.
+                Você sofre –1 de penalidade na CA.
+                Você não pode usar ações com o traço concentração a menos
+                que elas também possuam o traço fúria. Você pode Buscar
+                enquanto estiver em fúria.
+                Após encerrar sua fúria, você perde quaisquer Pontos de Vida
+                temporários recebidos pela Fúria e não pode entrar em Fúria
+                novamente por 1 minuto. "
+              },
+              {
+                "name" : "INSTINTO",
+                "text" : "Você canaliza sua fúria através de um instinto. Você decide
+                o que seu instinto significa para você. Ele pode ser uma
+                criatura ou símbolo amado por seu clã ou mesmo uma
+                fonte ou filtro puramente interna de sua fúria — como uma
+                crença, maldição, herança ou estado mental. Cada instinto
+                concede uma habilidade de instinto e mais habilidades
+                que você pode receber através de talentos de instinto. Ele
+                também determina a quais tipos de dano você resiste com
+                sua resistência em fúria e em níveis superiores aumenta o
+                dano adicional causado durante a Fúria.",
+                "options" : 
+                [
+                    {
+                        "tag" : 1,
+                        "name" : "INSTINTO ANIMAL",
+                        "text" : "O furor de um predador selvagem lhe preenche durante sua
+                        Fúria, concedendo-lhe ataques desarmados ferozes. Culturas que
+                        reverenciam animais ferozes (como macacos ou ursos) criam
+                        bárbaros com este instinto. Você também pode estar em guerra com
+                        o lado animal incontrolável de sua personalidade ou ser descendente
+                        de um lobisomem ou criatura similar. Selecione um animal da Tabela
+                        3–3: Instintos Animais que seja mais similar ao seu animal escolhido.
+                        
+                        Anátema
+                        Desrespeitar abertamente um animal de seu tipo escolhido
+                        é anátema a seu instinto, assim como usar armas enquanto
+                        estiver em fúria.
+        
+                        Fúria Bestial
+                        Quando estiver em Fúria, você adquire o ataque desarmado (ou
+                        ataques desarmados) de seu animal escolhido. O ataque específico
+                        adquirido, o dano que ele causa e seus traços são listados na Tabela
+                        3–3: Instintos Animais. Estes ataques estão no grupo pugilato. Sua
+                        ação Fúria adquire os traços morfia, primal e transmutação.
+        
+                        Habilidade de Especialização
+                        Aumente o tamanho do dado de dano para os ataques
+                        desarmados concedidos por seu animal escolhido em um passo,
+                        e aumente o dano adicional recebido de sua Fúria de 2 para
+                        5 pontos para os ataques desarmados do animal escolhido. O
+                        ataque de língua do sapo e o ataque de galhada do veado têm
+                        seu alcance aumentado para 3 metros. Se possuir especialização
+                        em armas maior, aumente o dano de sua Fúria de 5 para 12
+                        pontos para os ataques desarmados do animal escolhido.
+        
+                        Resistência em Fúria
+                        Você resiste a dano cortante e perfurante."
+                      },
+                      {
+                        "tag" : 2,
+                        "name" : "INSTINTO DE DRAGÃO",
+                        "text" : "Você convoca o furor de um dragão poderoso e manifesta
+                        habilidades incríveis. Talvez sua cultura reverencie a majestade
+                        dracônica, ou talvez você tenha ganhado sua conexão ao
+                        beber ou banhar-se no sangue de um dragão ou após observar
+                        um ancião saqueador queimando sua vila. Selecione um tipo
+                        de dragão da Tabela 3–4: Instintos de Dragão como o tipo
+                        de dragão de seu instinto. Dragões cromáticos tendem a ser
+                        malignos, e dragões metálicos tendem a ser bondosos.
+                        
+                        Aceitar um insulto pessoal contra você é anátema a seu
+                        instinto. Escolha se seu personagem respeita ou abomina seu
+                        tipo de dragão. Se o respeitar, desafiar um dragão desses é
+                        anátema — se o abominar, fracassar em derrotar um dragão
+                        desses que cruzou o seu caminho é um anátema para você.
+        
+                        Quando estiver em Fúria, você pode aumentar o dano
+                        adicional de sua Fúria de 2 para 4 pontos e alterar seu tipo de
+                        dano para corresponder com o tipo do sopro de seu dragão em
+                        vez do tipo de dano de sua arma ou ataque desarmado. Se fizer
+                        isto, sua ação de Fúria adquire os traços arcano e evocação,
+                        assim como o traço correspondente ao tipo de dano.
+        
+                        Quando usa fúria dracônica, você aumenta o dano adicional
+                        de sua Fúria de 4 para 8 pontos. Se tiver especialização em
+                        armas maior, aumente o dano de sua Fúria quando usar fúria
+                        dracônica de 8 para 16 pontos.
+                        resistênciA em fÚriA
+                        Você resiste a dano perfurante e ao tipo de dano do sopro
+                        de seu dragão."
+                      },
+                      {
+                        "tag" : 3,
+                        "name" : "INSTINTO ESPIRITUAL",
+                        "text" : "Sua fúria assume a forma de uma possessão espiritual, seja
+                        através de uma sensitividade espiritual, adoração a ancestrais
+                        ou aparições ou à assombração de um adversário, amigo,
+                        ancestral ou parente.
+                        
+                        Desrespeitar cadáveres ou espíritos é anátema para seu
+                        instinto; defender-se contra criaturas mortas-vivas não.
+                        
+                        Quando estiver em fúria, você pode aumentar o dano de sua Fúria
+                        de 2 para 3 pontos e causar dano negativo ou dano positivo em
+                        vez do tipo de dano normal para sua arma ou ataque desarmado
+                        (escolha o tipo de dano cada vez que entrar em Fúria). Se escolher
+                        causar dano negativo ou dano positivo, sua arma ou ataque desarmado 
+                        recebe os efeitos da runa de propriedade toque fantasma 
+                        (tornando-a mais efetiva contra criaturas incorpóreas)
+                        e sua ação de Fúria adquire os traços divino e necromancia (além
+                        do traço negativo ou positivo, conforme for apropriado).
+                        
+                        Quando usar fúria espiritual, aumente o dano adicional de sua
+                        Fúria de 3 para 7 pontos. Se possuir especialização em armas
+                        maior, aumente o dano adicional de sua Fúria de 7 para 13 pontos.
+                        
+                        Você resiste a dano negativo, assim como a todo dano
+                        causado pelos ataques e habilidades de criaturas mortas-
+                        vivas (independentemente do tipo de dano causado por elas)."
+                      },
+                      {
+                        "tag" : 4
+                        "name" : "INSTINTO DO FUROR",
+                        "text" : "
+                        Sua fúria se origina de uma fonte interior profunda e puramente
+                        pessoal. Você usa sua fúria conforme seus próprios desejos.
+                        
+                        Você não possui um anátema ou habilidade de instinto. Em vez
+                        disso, você recebe um talento de bárbaro de 1º nível adicional.
+                        
+                        Aumente o dano adicional de sua Fúria de 2 para 6 pontos.
+                        Se possuir especialização em armas maior, aumente o dano
+                        adicional de sua Fúria de 6 para 12 pontos.
+                        
+                        Você resiste a dano físico de armas, mas não dano físico de
+                        outras fontes (como ataques desarmados)."
+                      },
+                      {
+                        "tag" : 5,                        
+                        "name" : "INSTINTO DE GIGANTE",
+                        "text" : "Sua fúria lhe concede o poder bruto e o tamanho de um gigante.
+                        Isto não necessariamente significa que você reverencia os gigantes
+                        — você pode desprezá-los ou mesmo querer assassiná-los! Ou
+                        então, você simplesmente parece um gigante para outras pessoas
+                        devido à sua força excepcional ou emoções e ego descomunais.
+                        
+                        Recusar ou evitar enfrentar um desafio pessoal de força é
+                        nátema para você.
+                        
+                        Você pode usar uma arma feita para uma criatura Grande se for Pequeno ou Médio (durante
+                        a fúria e fora dela). Se não for Pequeno ou Médio, você pode usar uma arma feita para uma
+                        criatura um tamanho maior que você. Você obtém acesso a uma arma um tamanho maior que o
+                        seu de qualquer tipo de arma disponível para você durante a criação de personagem. Ela possui
+                        o Preço e Volume normais para uma arma do tamanho dela (página 295). Quando empunhar
+                        uma arma dessas em combate, aumente seu dano adicional de Fúria de 2 para 6 pontos, mas
+                        você sofre a condição desajeitado 1 (página 619) devido ao tamanho desproporcional de sua
+                        arma. Você não pode remover esta condição desajeitado ou ignorar suas penalidades por
+                        quaisquer meios enquanto empunhar a arma.
+                        
+                        Aumente o dano adicional de sua Fúria quando usar uma arma maior de 6 para 10 pontos. Se
+                        possuir especialização em armas maior, aumente o dano adicional de sua Fúria de 10 para 18 pontos.
+                        
+                        Você resiste a dano contundente e um outro tipo de dano entre eletricidade, fogo e frio,
+                        escolhido quando você adquire resistência em fúria."
+                      }
+                ]
+              }
+            ]
+        },
+        {
+            "class" : "Bardo",
+            "key" : "CHA",
+            "pv" : "8",
+            "proficiencies" :
+            [
+                {
+                    "Percepção" : "Especialista"
+                },
+                {
+                    "Jogadas de Salvamento" :
+                    {
+                        "Treinado" : ["Fortitude", "Reflexos"],
+                        "Especialista" : ["Vontade"]
+                    }
+                },
+                {
+                    "Perícias" :
+                    {
+                        "Treinado" : ["Ocultismo", "Performance", "FREE", "FREE", "FREE", "FREE"]
+                    }
+                },
+                {
+                    "Ataques" :
+                    {
+                        "Treinado" : ["Armas Simples", "Arcos Curtos", "Chicotes", "Espadas Curtas", "Espadas Longas", "Porretes", "Rapieiras", "Ataques Desarmados"]
+                    }
+                },
+                {
+                    "Defesas" :
+                    {
+                        "Treinado" : ["Armaduras Leves", "Sem Armadura"]
+                    }
+                },
+                {
+                    "CD De Classe/Magia" :
+                    {
+                        "Treinado" : ["Ataque de Ocultismo", "CD de Ocultismo"]
+                    }
+                }
+            ],
+            "characteristics" :
+            [
+                {
+                    "name" : "REPERTÓRIO DE MAGIAS",
+                    "text" : "A coleção de magias que você pode conjurar é chamada de
+                    repertório de magias. No 1º nível, você aprende duas magias
+                    ocultistas de 1º nível e cinco truques mágicos ocultistas à sua
+                    escolha. Você escolhe estas magias e truques dentre as magias
+                    comuns da lista de magias ocultistas (página 311) ou dentre
+                    outras magias ocultistas às quais tenha acesso. Você pode
+                    conjurar qualquer magia de seu repertório de magias ao usar
+                    um espaço de magia do nível de magia apropriado.
+                    Conforme avança de nível, você adiciona magias a este
+                    repertório de magias. Para cada espaço de magia recebido
+                    (veja a Tabela 3–6), você adiciona uma magia do mesmo
+                    nível ao seu repertório de magias. No 2º nível, você seleciona
+                    outra magia de 1º nível; no 3º nível, você seleciona duas
+                    magias de 2º nível e assim por diante. Quando adicionar
+                    magias ao seu repertório, você pode decidir adicionar uma
+                    versão de nível superior de uma magia que já possua para
+                    que possa conjurar uma versão elevada dessa magia.
+                    Embora os receba na mesma quantidade, seus espaços de magia
+                    e as magias em seu repertório são valores separados. Um talento
+                    ou outra habilidade que adicione uma magia ao seu repertório de
+                    magias não lhe concede um espaço de magia e vice-versa.
+                    
+                    Conforme ganha novas magias em seu repertório, você pode
+                    substituir algumas das magias que aprendeu anteriormente. Cada
+                    vez que ganhar um nível e aprender novas magias, você pode trocar
+                    uma de suas magias antigas por uma magia diferente do mesmo
+                    nível. Esta magia pode ser um truque mágico. Você também pode
+                    trocar magias ao retreinar durante seu recesso (página 481)."   
+                },
+                {
+                    "name" : "MAGIAS DE COMPOSIÇÃO",
+                    "text" : "Você pode infundir suas performances com magias para
+                    criar efeitos únicos chamados de composições. Composições
+                    são um tipo especial de magia que frequentemente exigem
+                    que você use a perícia Performance ao conjurá-las.
+                    Magias de composição são um tipo de magia de foco. Conjurar
+                    uma magia de foco custa 1 Ponto de Foco, e você adquire uma
+                    reserva de foco com 1 Ponto de Foco. Você reabastece sua reserva
+                    de foco durante suas preparações diárias e pode recuperar 1
+                    Ponto de Foco ao gastar 10 minutos usando a atividade Refocar
+                    fazendo uma performance, escrevendo uma nova composição ou
+                    de alguma forma interagindo com sua musa.
+                    Magias de foco são automaticamente elevadas à metade de
+                    seu nível de personagem arredondada para cima, similarmente a
+                    truques mágicos. Magias de foco não exigem espaços de magia
+                    e você não pode conjurá-las usando espaços de magia. Alguns
+                    talentos podem conceder mais magias de foco e aumentar o
+                    tamanho de sua reserva de foco, embora ela nunca possa conter
+                    mais do que 3 Pontos de Foco. As regras completas para magias
+                    de foco são apresentadas a partir da página 300.
+                    Você aprende a magia de composição contraperformance 
+                    (página 386), que protege contra efeitos auditivos e visuais.
+                    
+                    Truques mágicos de composição são magias de
+                    composição especiais que não custam Pontos de Foco,
+                    portanto, você pode usá-las à vontade.
+                    Você aprende o truque mágico de composição inspirar
+                    coragem (página 387), que aprimora os ataques, dano e
+                    defesa contra medo de seus aliados."
+                },
+                {
+                    "name" : "MUSAS",
+                    "text" : "Como um bardo, você seleciona uma musa no 1º nível. Esta
+                    musa o leva a alturas grandiosas, e pode ser uma criatura
+                    física, uma divindade, uma filosofia ou um mistério cativante.",
+                    "options" :
+                    [
+                        {
+                            "tag" : 1,
+                            "name" : "ENIGMA",
+                            "text" : "Sua musa é um mistério, levando-o a descobrir os segredos
+                            escondidos do multiverso. Se for uma criatura, ela pode ser um
+                            dragão ou um ser transcendental ou extraterreno; se for uma
+                            divindade, pode ser Irori ou Nethys. Você recebe o talento Saber
+                            Bárdico e adiciona golpe certo ao seu repertório de magias."
+                        },
+                        {
+                            "tag" : 2,
+                            "name" : "MAESTRO",
+                            "text" : "Sua musa é um virtuoso artístico, inspirando-o a grandes
+                            auges. Se for uma criatura, pode ser uma criatura que ama
+                            performar (como um anjo corista ou um azata lillend); se
+                            for uma divindade, pode ser Shelyn. Como um bardo da
+                            musa maestro, você é uma inspiração para seus aliados,
+                            sempre confiante em suas habilidades musicais e oratórias.
+                            Você recebe o talento Composição Prolongada e adiciona
+                            abrandar ao seu repertório de magias."
+                        },
+                        {
+                            "tag" : 3,
+                            "name" : "POlíMATA",
+                            "text" : "Sua musa é um faz-tudo, esvoaçando entre diferentes buscas e
+                            competências. Se for uma criatura, ela pode ser eclética, como
+                            uma fada; se for uma divindade, pode ser Desna ou Calistria.
+                            Como um bardo da musa polímata, você é interessado em uma
+                            ampla gama de tópicos, mas raramente se dedica a somente
+                            um e raramente toma uma decisão definitiva — você quer
+                            tentar de tudo. Você recebe o talento Performance Versátil e
+                            adiciona servo invisível ao seu repertório de magias."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "class" : "Campeão",
+            "key" : ["STR", "DEX"],
+            "pv" : "10",
+            "proficiencies" :
+            [
+                {
+                    "Percepção" : "Treinado"
+                },
+                {
+                    "Jogadas de Salvamento" :
+                    {
+                        "Treinado" : ["Reflexos"],
+                        "Especialista" : ["Fortitude", "Vontade"]
+                    }
+                },
+                {
+                    "Perícias" :
+                    {
+                        "Treinado" : ["Religião", "DIVINITY", "FREE", "FREE"]
+                    }
+                },
+                {
+                    "Ataques" :
+                    {
+                        "Treinado" : ["Armas Simples", "Armas Marciais", "Ataques Desarmados"]
+                    }
+                },
+                {
+                    "Defesas" :
+                    {
+                        "Treinado" : ["Armaduras Leves", "Armaduras Médias", "Armaduras Pesadas", "Sem Armadura"]
+                    }
+                },
+                {
+                    "CD De Classe/Magia" :
+                    {
+                        "Treinado" : ["Campeão", "Ataque de Divina", "CD de Divina"]
+                    }
+                }
+            ],
+            "characteristics" :
+            [
+                {
+                    "name" : "CÓDIGO DE CAMPEÃO",
+                    "text" : "Você segue um código de conduta composto por princípios
+                    compartilhados por todos os campeões de uma tendência
+                    (tal como bom) e por princípios de sua causa. Divindades
+                    frequentemente acrescentam restrições adicionais (por
+                    exemplo, campeões de Torag não podem demonstrar
+                    misericórdia com inimigos de seu povo, tornando quase
+                    impossível que sigam a causa de redentor). Este livro apresenta
+                    regras apenas para campeões bondosos. Os princípios são
+                    listados em ordem de importância, começando com o mais
+                    importante. Se uma situação colocar dois princípios em
+                    conflito, você não fica sem saída; em vez disso, siga o princípio
+                    mais importante. Por exemplo: suponha que você seja um
+                    paladino e um rei maligno pergunte se você está abrigando
+                    refugiados que devem ser executados cruelmente. Nessa
+                    situação, você poderia mentir para ele, pois o princípio contra
+                    mentir é menos importante do que o princípio de prevenir o
+                    sofrimento de inocentes. Tentar subverter seu código criando
+                    uma situação que force um princípio superior a sobrepor um
+                    princípio inferior (por exemplo, prometer não respeitar as
+                    autoridades e, depois, para manter sua palavra, desrespeitar
+                    autoridades) é uma violação do código de campeão.
+                    Se desviar-se de sua tendência ou violar seu código de conduta,
+                    você perde sua reserva de foco e aliado divino até demonstrar
+                    arrependimento conduzindo um ritual de expiação (página
+                    413). Nessa situação você ainda mantém quaisquer outras
+                    habilidades de campeão que não requerem essas características
+                    de classe. Se sua tendência mudar para uma que ainda seja
+                    permitida por sua divindade, seu MJ pode lhe permitir retreinar
+                    sua causa desde que continue seguindo a mesma divindade.
+
+                    os Princípios do bem:
+                    Todos os campeões de tendência bondosa seguem estes
+                    princípios:
+                    • Você nunca deve realizar atos anátemas à sua divindade
+                    ou voluntariamente cometer um ato maligno, como
+                    assassinato premeditado, tortura ou conjurar uma
+                    magia maligna.
+                    • Você nunca deve intencionalmente ferir um inocente, ou
+                    permitir o sofrimento imediato de um inocente através de
+                    inação quando sabe que poderia preveni-lo razoavelmente.
+                    Este princípio não o força a agir contra possíveis ferimentos
+                    ou sofrimentos de inocentes em um momento futuro
+                    indefinido ou sacrificar sua vida para protegê-los."
+                },
+                {
+                    "name" : "DIVINDADE E CAUSA",
+                    "text" : ""
+                }
+            ]
+        },
+    ]
+}
+
+{
+    "class" : "",
+    "key" : "",
+    "pv" : "",
+    "proficiencies" :
+    [
+        {
+            "Percepção" : ""
+        },
+        {
+            "Jogadas de Salvamento" :
+            {
+                "Treinado" : [],
+                "Especialista" : []
+            }
+        },
+        {
+            "Perícias" :
+            {
+                "Treinado" : []
+            }
+        },
+        {
+            "Ataques" :
+            {
+                "Treinado" : []
+            }
+        },
+        {
+            "Defesas" :
+            {
+                "Treinado" : []
+            }
+        },
+        {
+            "CD De Classe/Magia" :
+            {
+                "Treinado" : ""
+            }
+        }
+    ],
+    "characteristics" :
+    [
+        {
+            "name" : "",
+            "text" : ""
+        }
+    ]
+},
